@@ -4,7 +4,7 @@
 
 ## Commands
 
-#### set-rtc
+### set-rtc
 
 NAME<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -19,7 +19,7 @@ DESCRIPTION<br/>
 Sets the real time clock on a connected RRIV device to unix epoch time as reported by the attached computer.<br/>
 <br/>
 
-#### get-rtc
+### get-rtc
 
 NAME<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
