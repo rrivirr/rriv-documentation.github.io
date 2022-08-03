@@ -25,4 +25,5 @@ RRIV is an open system for logging environmental data.
 * [Integrating](integrating/)
 * [Software Documentation](software/)
 * [Hardware Documentation](hardware/)
+* [Roadmap](roadmap/)
 
