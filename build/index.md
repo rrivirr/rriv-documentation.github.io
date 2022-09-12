@@ -6,6 +6,8 @@ Details and instructions for building components of RRIV sondes.
 
 * Extended Case
 * Methane Sensor
+* CO2 Sensor
+* Temperature Sensor
 * Electronics
 
 ### Templates
