@@ -68,4 +68,13 @@ The baseColumnHeaders private variable stores a cost value that contains a comma
 
 ## Implement sensor specific configuration functionality (optional).
 
+Not all sensors will have specific configurations beyond what is provided by the sensor driver superclass already, but many will.  To implement these configurations and expose them over the CLI, the following functions and the driver_configuration struct must be updated.
+
+1. configureSpecificConfigurationsFromBytes(...);
+2. getDriverSpecificConfigurationBytes();
+3. configureDriverFromJSON(...);
+4. appendDriverSpecificConfigurationJSON(...);
+5. setDriverDefaults();
+
+
 ## Implement callibration functionality (optional).
