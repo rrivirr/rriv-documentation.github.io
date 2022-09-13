@@ -17,7 +17,7 @@ Sensor setup and measurement functionality is implemented by updating the follow
 
 ### setup()
 
-The *setup()* function should preform any logic that is needed to start collecting readings from the sensor.  An analog sensor typically has not setup logic.  iDigital sensors, such as I2C, SPI, or GPIO protocol sensors, often _will_ have commands that must be sent to them to start collecting readings, or select certain functionality.  Details on this can be found in the documentation for the sensor being integrated.  This logic all goes in the setup() function.
+The *setup()* function should preform any logic that is needed to start collecting readings from the sensor.  An analog sensor typically has no setup logic.  iDigital sensors, such as I2C, SPI, or GPIO protocol sensors, often _will_ have commands that must be sent to them to start collecting readings, or select certain functionality.  Details on this can be found in the documentation for the sensor being integrated.  This logic all goes in the setup() function.
 
 ### stop()
 
