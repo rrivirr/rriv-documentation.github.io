@@ -1,4 +1,6 @@
 # Steps
+The driver class creation script will create a .h file with all necessary variables and functions to define the class, and a .ccp file that contains stubs for all functions that need to be implemented.  Implementing a driver thus then proceeds by writing logic into the function stubs in the .cpp file, and no modifications to the generated .h file are necessary except where explicitly described in this document.
+
 The new C++ class file created by the driver template script contains the complete skeleton of variables and functions needed to create a working driver for your sensor.  However, some functions and variables will need to be updated to complete the implementation of the driver.  Other functions and variables only need to be updated to implement optional features.  There are also functions and variables that do not need to be updated at all, they are just part of the driver skeleton code itself.
 
 An approach to updating necessary functions and variables should proceed as follows:
