@@ -25,7 +25,7 @@ The *setup()* function should preform any logic that is needed to start collecti
 
 ### isWarmedUp()
 
-*isWarmedUp()* returns a boolean value, indicating if the sensor is ready to start returning values.  *isWarmedUp()* is called after *setup()*, and the datalogger will wait for *isWarmedUp()* to return true before starting to read measurements from the sensor.  The logic of *isWarmedUp()* will typically be a time delay or  command that checks with a digital sensor for readiness.  More advanced implementations might look at a standard deviation of returned values, such as for an analog sensor.
+`isWarmedUp()` returns a boolean value, indicating if the sensor is ready to start returning values.  `isWarmedUp()` is called after *setup()*, and the datalogger will wait for *isWarmedUp()* to return true before starting to read measurements from the sensor.  The logic of *isWarmedUp()* will typically be a time delay or  command that checks with a digital sensor for readiness.  More advanced implementations might look at a standard deviation of returned values, such as for an analog sensor.
 
 ### takeMeasurement()
 
@@ -35,6 +35,36 @@ Burst summary calculation is the mechanism by which multiple readings during a b
 
 
 ## Implement data output functionality.
+Data output to the SDCard is implemented by updating the following functions:
+1. `getRawDataString()`
+2. `getSummaryDataString()`
+
+Additionally, the following privet instance variables must be updated:
+1. `baseColumnHeaders`
+2. `dataString`
+
+### getRawDataString()
+
+This function simply returns a comma delimited string of the values stored by the last successfully reading from the sensor.  This is typically done by using sprintf to print into character array, and then returning this character array.  Such as the following code snipped for a single variable.  Using the instance variable dataString for storage allows a char * to be returned without concerns about storage scope.  
+
+```
+sprintf(dataString, "%d",value);
+return dataString;
+```
+
+### getSummaryDataString()
+
+This function is similar to `getRawDataString()` execpt that instead of returning values from the last successful sensor reading, it returns a summary value for a burst cycle.  This is typically a mean value, which can be retrieved from the values stored by `addValueToBurstSummaryMean(tag, value)` by using the function `getBurstSummaryMean(tag)`.  `getBurstSummaryMean(tag)` must be called with the appropriate tag for each variable returned by the sensor.  The return value from `getSummaryDataString()` is a comma delimited list of a summary value for each variable returned by the sensor.
+
+For advanced use cases, summary logic other than a mean value may be desired, in which case it is left to the developer to implement appropriate storage and summarization functions in the driver class to support this feature.
+
+### baseColumnHeaders
+
+The baseColumnHeaders private variable stores a cost value that contains a comma delimited list of the column header strings for each variable returned by the sensor.  If a sensor returns a single, uncalibrated value then this variable will just contain a single variable name such as `const char *baseColumnHeaders = "value";`.  When both a raw and calibrated value are returned, a string such the following can be used `const char *baseColumnHeaders = "raw,cal";`.  For more complex sensors as many column headers as necessary should be included, such as const char `const char *baseColumnHeaders = "temperature,humidity,CO2";`.  Note that drivers are also configured with a prefix tag that will be added to each of these column headers for each instantiaion of the driver.
+
+### dataString
+
+`dataString` is a private variable used to temporarily stored returned output from the sensor during output to the SDCard.  The size of this character array must be increased to account for the largest possible number of characters that `getRawDataString()` or `getSummaryDataString()` could need to write for output.
 
 ## Implement sensor specific configuration functionality (optional).
 
