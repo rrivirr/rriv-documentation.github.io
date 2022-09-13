@@ -7,8 +7,8 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 [columns? availability, manufacturer part number, manufacturer, notes]: #
 [comment test]: #
 
-| Item                                                       | Case Qty   | Buy Qty   |  Supplier Part#/CAD link |
-| ---------------------------------------------------------- | ---------- | --------- |  ----------------------- |
+| Item                                                       | Case Qty   | Buy Qty   |  Supplier Part # / CAD link |
+| ---------------------------------------------------------- | ---------- | --------- |  -------------------------- |
 | 3" ABS Schedule 40 Pipe                                    | 11"        | 10'       | [Menards 6881155 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/10-abs-sch-40-plain-end-cellular-core-dwv-pipe/abs033000600hc/p-1444426392509-c-8562.htm) |
 | 3" ABS Hub x Hub Coupler                                   | 2          | 1         | [Menards 6881537 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/nibco-reg-hub-abs-dwv-coupling/i00975h/p-1444449159767-c-8562.htm) |
 | -341 EPDM 70A O-ring                                       | 2          | 15        | [McMaster-Carr 9557K316](https://www.mcmaster.com/9557K316/) |
@@ -22,11 +22,13 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 | Dome Cap Cable Gland 1/2" NPT .19-.35" w/ O-Ring & Locknut | 1          | 1         | [elecDirect RDC13NR](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-1-2-npt-19-35-black-complete-with-o-ring-locknut) |
 | Dome Cap Cable Gland .11-.26" w/ O-Ring & Locknut          | 1          | 1         | [elecDirect RDC07AA](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-pg7-11-26-black-complete-with-o-ring-locknut) |
 | 3/4" wide Velcro                                           | 1"         | 5'        | [McMaster-Carr 9273K13-9273K133](https://www.mcmaster.com/9273K13-9273K133/) |
+| 18-8 Stainless Steel Phillips Flat Head #6 x 1/2" Screws   | 6          | 100       | [McMaster-Carr 90065A148](https://www.mcmaster.com/90065A148/) |
 | 3/4" x 3/4" Nylon Bar                                      | 1'         | 1'        | [McMaster-Carr 8732K17](https://www.mcmaster.com/8732K17/) |
-| 1/4" Clear Acrylic Lid Plate                               | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
-| 1/4" Clear Acrylic Sensor Plate                            | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
-| 1/4" Clear Acrylic Cage Plate                              | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
-| 18-8 Stainless Steel Phillips Flat Head #6 x 1/2" Screws  | 6 | 100 | [McMaster-Carr 90065A148](https://www.mcmaster.com/90065A148/) |
+| 1/4" Clear Acrylic Lid Plate*                              | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
+| 1/4" Clear Acrylic Sensor Plate*                           | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
+| 1/4" Clear Acrylic Cage Plate*                             | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
+
+*[Flare Tech Laser & Design](https://flaretechlaser.com/)
 
 ## Diagrams
 
