@@ -10,6 +10,10 @@ Details and instructions for building components of RRIV sondes.
 * Temperature Sensor
 * Electronics
 
+### Use Case
+
+* [Methane Case](methane_case.md)
+
 ### Templates
 
 * [Case](template_case.md)
