@@ -62,7 +62,7 @@ For advanced use cases, summary logic other than a mean value may be desired, in
 
 ### baseColumnHeaders
 
-The baseColumnHeaders private variable stores a cost value that contains a comma delimited list of the column header strings for each variable returned by the sensor.  If a sensor returns a single, uncalibrated value then this variable will just contain a single variable name such as `const char *baseColumnHeaders = "value";`.  When both a raw and calibrated value are returned, a string such the following can be used `const char *baseColumnHeaders = "raw,cal";`.  For more complex sensors as many column headers as necessary should be included, such as const char `const char *baseColumnHeaders = "temperature,humidity,CO2";`.  Note that drivers are also configured with a prefix tag that will be added to each of these column headers for each instantiaion of the driver.
+The baseColumnHeaders private variable stores a const value that contains a comma delimited list of the column header strings for each variable returned by the sensor.  If a sensor returns a single, uncalibrated value then this variable will just contain a single variable name such as `const char *baseColumnHeaders = "value";`.  When both a raw and calibrated value are returned, a string such the following can be used `const char *baseColumnHeaders = "raw,cal";`.  For more complex sensors as many column headers as necessary should be included, such as const char `const char *baseColumnHeaders = "temperature,humidity,CO2";`.  Note that drivers are also configured with a prefix tag that will be added to each of these column headers for each instantiaion of the driver.
 
 ### dataString
 
