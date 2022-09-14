@@ -80,3 +80,6 @@ Not all sensors will have specific configurations beyond what is provided by the
 
 
 ## Implement callibration functionality (optional).
+
+## Style Guide
+For C++ variable naming and other style conventions, reference the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
