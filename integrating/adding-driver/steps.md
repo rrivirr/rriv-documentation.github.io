@@ -83,3 +83,7 @@ Not all sensors will have specific configurations beyond what is provided by the
 
 ## Style Guide
 For C++ variable naming and other style conventions, reference the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
+Variable naming reference:
+* Class names use studly caps (e.g., StudlyCaps).
+* Variable and function names use camel caps (e.g., camelCaps).
+* Preprocessor macros (e.g., for use with #define) use screaming snake case (e.g., SCREAMING_SNAKE_CASE).
