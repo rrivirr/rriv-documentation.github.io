@@ -11,7 +11,6 @@
 | Zip ties ( 11" )                                            | 8.         | 100 | https://www.menards.com/main/electrical/electrical-tools-accessories/cable-ties/gardner-bender-reg-11-natural-cable-ties-100-pack/46-210/p-1444430994083-c-6443.htm?tid=-1577002442902513490&ipos=9 |  
 | Zinc plated machine screws (size 10, 32 x 1-1/2" )         | 48         | 70 (1 box)| https://www.menards.com/main/hardware/fasteners-connectors/screws/machine-screws/grip-fast-reg-10-32-x-1-1-2-combo-drive-zinc-round-head-machine-screw-70-count/77116520241/p-1444452011002-c-8933.htm?tid=523259707822814569&ipos=7 |
 | Dessicant Packet                                           | 1          | 1000      | [McMaster-Carr 2189K34](https://www.mcmaster.com/2189K34/) |
-
 | Tubing   | | |
 | connectors | | |
 | bulk heads | | |
