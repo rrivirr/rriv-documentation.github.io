@@ -4,6 +4,15 @@
 
 ## Commands
 
+### set-start-up-delay {Time-in-Minutes}
+NAME
+
+SYNOPSIS
+Variable entered after command is the start-up delay time in minutes.
+
+DESCRIPTION
+Sets the number of minutes before the device will begin logging after wake.
+
 ### set-rtc
 
 NAME<br/>
