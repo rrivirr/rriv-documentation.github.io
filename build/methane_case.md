@@ -1,8 +1,9 @@
 # Methane and Carbon Dioxide Case
 
 Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and AtlasScientific EZO-CO2 sensor.  Which informs the sensor plate, cable glands, and power supply (length of case and nylon bar).
+[TODO: If we removed / generalized the sensor plate and cable glands requirements / instructions this could generally be for a 12" elongated case]: #
 
-## Bill of Materials and Example Vendor or Drawing
+## Bill of Materials and Potential Supplier or Drawing
 
 [columns? availability, manufacturer part number, manufacturer, notes]: #
 [comment test]: #
@@ -32,8 +33,11 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 
 ## Diagrams
 
-{insert link to diagram of entire case w/ annotations and dimensions, multiple views = top, side, bottom}
-{insert links to cad drawings of plates}
+[TODO: add images to markdown file ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) ]:#
+
+[insert link to diagram of entire case w/ annotations and dimensions, multiple views = top, side, bottom]:#
+[Annotated Case Diagram]()
+[3" Acrylic Plates CAD drawing](https://github.com/rrivirr/sonde/tree/master/panels)
 
 ## Build Process
 
@@ -48,11 +52,12 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 
 ### Parts Fabrication
 
-- Cut steel threaded rods to __ length
+- Cut steel threaded rod into 6 parts of 18" length
 - Cut ABS to 2x 1-21/32" length, 1x 11" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly
 - Mark placement of battery holder screw placements on Nylon bar
 - Drill 3/32" pilot holes into nylon bar (for #6 screws) according to battery holder placement centered on bar, then screw battery holder into nylon bar
 - Cut 20" of copper mesh
+- Attach both cable glands through their respective holes in acrylic sensor plate
 
 ### Assembly & Waterproofing
 
