@@ -4,7 +4,16 @@
 
 ## Commands
 
-### set-start-up-delay {Time-in-Minutes}
+### set-interval {sampling-interval-time-in-minutes}
+NAME
+
+SYNOPSIS<br/>
+Variable entered after command is the sampling interval time in minutes.
+
+DESCRIPTION<br/>
+Sets the number of minutes between sampling events. Specifically sets the interval for the wake-up time.
+
+### set-start-up-delay {time-in-minutes}
 NAME
 
 SYNOPSIS<br/>
