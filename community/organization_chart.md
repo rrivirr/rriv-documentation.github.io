@@ -14,15 +14,22 @@ This organization chart is a work in progress, as we bootstrap our organizationa
 * Ken Chong
 * Matty Interrupt
 
-### Embedded Software
+### Embedded Software Team
 
-### Hardware
+### Hardware Team
 
-### Configuration Client
+### Configuration Client Team
+
+### Mobile
+( No mobile functionality currently scheduled )
 
 ### Cloud
 ( No cloud functionality currently scheduled )
 
 ## Operations & Communication
 
+### Web Team
 
+### Onboarding Team
+
+### Documentation
