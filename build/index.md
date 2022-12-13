@@ -12,8 +12,10 @@ Details and instructions for building components of RRIV sondes.
 
 ### Use Cases
 
-* [Methane Case](methane_case.md)
+* [Methane Case 2ft](methane_case_2ft.md)
+* [Methane Case 1ft](methane_case_1ft.md)
 * [Methane Sensor](methane_sensor.md)
+* [CO2 Sensor](co2_sensor.md)
 
 ### Templates
 

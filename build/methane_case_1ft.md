@@ -1,6 +1,6 @@
 # Methane and Carbon Dioxide Case
 
-Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and AtlasScientific EZO-CO2 sensor.  Which informs the sensor plate, cable glands, and power supply (length of case and nylon bar).
+Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScientific EZO-CO2 sensor, and an external power source.  Which informs the sensor plate, cable glands, and power supply (length of case).
 [TODO: If we removed / generalized the sensor plate and cable glands requirements / instructions this could generally be for a 12" elongated case]: #
 
 ## Bill of Materials and Potential Supplier or Drawing
@@ -13,7 +13,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 | 3" ABS Schedule 40 Pipe                                    | 11"        | 10'       | [Menards 6881155 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/10-abs-sch-40-plain-end-cellular-core-dwv-pipe/abs033000600hc/p-1444426392509-c-8562.htm) |
 | 3" ABS Hub x Hub Coupler                                   | 2          | 1         | [Menards 6881537 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/nibco-reg-hub-abs-dwv-coupling/i00975h/p-1444449159767-c-8562.htm) |
 | -341 EPDM 70A O-ring                                       | 2          | 15        | [McMaster-Carr 9557K316](https://www.mcmaster.com/9557K316/) |
-| 18-8 Stainless Steel Threaded Rod 3/8" -16                 | 108"       | 6'        | [McMaster-Carr 98920A031](https://www.mcmaster.com/98920A031/) |
+| 18-8 Stainless Steel Threaded Rod 3/8" -16                 | 3          | 2'        | [McMaster-Carr 98920A031](https://www.mcmaster.com/98920A031/) |
 | 18-8 Stainless Steel Hex Nuts 3/8" -16                     | 24         | 100       | [McMaster-Carr 91845A031](https://www.mcmaster.com/91845A031/) |
 | 18-8 Stainless Steel Washers 3/8"                          | 24         | 100       | [McMaster-Carr 92141A031](https://www.mcmaster.com/92141A031/) |
 | 5" Copper Mesh/Gauze                                       | 20"        | 100'      | [McMaster-Carr 6361T16 ](https://www.mcmaster.com/6361T16/) |
@@ -28,6 +28,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 | 1/4" Clear Acrylic Lid Plate*                              | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
 | 1/4" Clear Acrylic Sensor Plate*                           | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
 | 1/4" Clear Acrylic Cage Plate*                             | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
+| ABS Cement                                                 | Consumable | NA        | [Menards  6932185](https://www.menards.com/main/plumbing/plumbing-installation-repair/pipe-cements-cleaners-primers/oatey-reg-medium-black-abs-cement-4-oz/309995/p-1444449932067-c-8530.htm?tid=-7621218153408053791&ipos=1) |
 
 *[Flare Tech Laser & Design](https://flaretechlaser.com/)
 
@@ -52,19 +53,16 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, and Atlas
 
 ### Parts Fabrication
 
-- Cut steel threaded rod into 6 parts of 18" length
-- Cut ABS to 2x 1-21/32" length, 1x 11" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly
-- Mark placement of battery holder screw placements on Nylon bar
-- Drill 3/32" pilot holes into nylon bar (for #6 screws) according to battery holder placement centered on bar, then screw battery holder into nylon bar
-- Cut 20" of copper mesh
+- Cut steel threaded rod in half to 1' lengths
+- Cut two 1-21/32" length sections of ABS, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly
+- Cut 20" of copper mesh x2
 - Attach both cable glands through their respective holes in acrylic sensor plate
 
 ### Assembly & Waterproofing
 
 1. Add cable glands to sensor plate
-2. Insert ABS __ length into one end of each coupling, then __ length in between
+2. Insert ABS 1-21/32" length into each end of coupling
 3. Add O-Rings around ABS
 4. Add nuts & washers to rods
 5. Add plates & housing to rods
-6. Insert nylon bar into housing
-8. Wrap copper mesh around sensor cage and use cable ties to hold in place
+6. Wrap copper mesh around sensor cage and use cable ties to hold in place
