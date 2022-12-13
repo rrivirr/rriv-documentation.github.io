@@ -4,6 +4,34 @@
 
 ## Commands
 
+NAME
+### set-interval <sampling-interval-time-in-minutes>
+
+SYNOPSIS<br/>
+Variable entered after command is the sampling interval time in minutes.
+
+DESCRIPTION<br/>
+Sets the number of minutes between sampling events. Specifically sets the interval for the wake-up time.
+
+
+NAME
+### set-slot-config {"slot":4,"type":"generic_analog","tag":"two","burst_size":10}
+
+SYNOPSIS<br/>
+Places a particular sensor in a given slot.
+
+DESCRIPTION<br/>
+Sets the number of minutes between sampling events. Specifically sets the interval for the wake-up time.
+
+### set-start-up-delay {time-in-minutes}
+NAME
+
+SYNOPSIS<br/>
+Variable entered after command is the start-up delay time in minutes.
+
+DESCRIPTION<br/>
+Sets the number of minutes before the device will begin logging after wake.
+
 ### set-rtc
 
 NAME<br/>
