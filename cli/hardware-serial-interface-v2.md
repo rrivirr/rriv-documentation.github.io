@@ -12,7 +12,12 @@ Command documentation conventions:
 
 RRIV compatible devices are configured using declarative commands as
  
-`<object> <command> [arguments]`  
+`<command> <object> {key: value, key:value}`  
+
+or
+
+`{command: <command>, object: <object>, key: value, key: value}`  
+
 
 Commands common to most objects are as follows:
 
@@ -28,9 +33,19 @@ Gets current parameters of a resource, in a machine readable format.
 
 Removes a resource
 
-~~### ls~~
+### reset
 
-~~Lists all resources of a particular tyle, in a tabular human readable format.~~
+Resets parameters of an object back to defaults.  Can accept a property to focus reset on that property.
+
+### ls
+
+Lists all resources of a particular tyle, in a tabular human readable format.  This is not part of the standard, but implemented for ease of development.  rrivctl does support this command, but by calling ```get``` and filtering the results down to a human readable format.
+
+Consider if ls should be an abbreivate response for telemetry reasons, as in an index of objects without full properties.
+
+### calibrate
+
+Any object can potentially support a calibration routine
 
 ### run
 
@@ -44,7 +59,7 @@ Custom actions
 
 Configurate data logger timing and metadata.
 
-#### datalogger set {...}
+#### set datalogger {...}
 {...} is JSON blob tha contains one or more datalogger parameter variables
 
 ```
@@ -72,15 +87,19 @@ Configurate data logger timing and metadata.
 | user_note        | string | a note to add to each reading |
 | user_value       | int | a value to add to each reading | 
 
-#### datalogger get [parameter]
+#### get datalogger [{property: \$property}]
+* get datalogger [property]
+
+{command: get, object: datalogger, parameter: \<parameter>}
 
 Get datalogger configuration.  When called with a parameter argument, returns just the parameter requested.  Otherwise returns the entire JSON blob.
 
-#### datalogger reset
+#### reset datalogger [{property: \$property}]
+* reset datalogger [property]
 
-Resets datalogger to factory default configuration
+Resets datalogger to factory default configuration, or just resets a particular property.
 
-#### datalogger mode \<mode_request> [arg]
+#### set datalogger {mode: \<mode_request>, ...}
 
 Changes the mode the datalogger is in
 
@@ -91,12 +110,19 @@ Changes the mode the datalogger is in
 | deploy                | Moves immediately to deployment, sleeps the devices and awaits the next measurement cycle |
 | deploy \<timestamp> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | Moves to wait mode and sleeps the device.  When timestamp is reached, the device wakes and deploys |
 
+Datalogger also supports a shorthand which is outside the standard for mode switching over direct serial 
+connection:
+
+```
+mode <mode_request>
+```
+
 <br/>
 ### Sensor
 
 Commands to configure installed sensors.
 
-#### sensor \<id> set {...}
+#### set sensor \<id> {...}
 
 Creates or updates a sensor configuration.  If a sensor with the provided id is currently configured, it is updated.  Otherwise, a new sensor configuration is created.
 
@@ -116,98 +142,148 @@ Example (for generic analog sensor):
 
 
 
-#### sensor [id] get [parameter]
+#### get sensor [id] [{property: <property>}]
+* rrivctl shorthand get sensor [id] [property]
 
 Get a sensor configuration, corresponding to the id.  When called with a parameter argument, returns just the parameter requested.  Otherwise returns the entire JSON blob.
 
 If id is not specified, returns a JSON array containing all sensor configurations.
 
-#### sensor rm \<id>
+get sensor also supports an aggregate property 'calibration' which returns all calibration parameters only
+
+```
+{
+	'high_val': 5,
+	'low_val': 2,
+	'high_read': 2000,
+	'low_read' : 300,
+	'm': 2,
+	'b': 0.2
+}
+```
+
+#### rm sensor \<id>
 
 Remove the sensor configuration matching the corresponding id
 
-#### sensor ls
+#### ls sensor
 
 List all configured sensors in a tabluar format
 
-#### sensor <id> calibration <subcommand> <args>
-Sensor calibration is driver dependent, and subcommands are implemented on a per-driver basis.
+#### calibrate sensor \<id> {action: \$action, ...}
+##### action: point
+&nbsp; Sets a calibration point 
 
-##### get
-Get JSON blob of current calibration parameters, fit, and status of current calibration underway if any.
-##### status
-Tabular, human readable output of current calibration parameters, fit, and status of calibration underway if any.
-##### set <parameter> <val>
-Set a calibration parameter as defined by the driver
-##### fit [type]
-##### clear
-Clear calibration of given sensor
-##### run \<command>
+&nbsp;```calibrate sensor <id> {action: point, high: \$value}```
+
+##### action: fit
+&nbsp; Calculates fit based on calibration points
+
+&nbsp;```calibrate sensor <id> {action: fit, type: 'linear'}```
+
+
+#### reset sensor <id> {property: \$property}
+
+* reset sensor <id>
+* reset sensor <id> {property: \$property}
+* reset sensor <id> {property: 'calibration'} 
+* rrivctl shorthand: reset sensor <id> $property
 
 <br/>
 ### Actuator
 
 Summary: actuator set, get, rm, ls
 
-#### actuator [id] set {...}
+#### set actuator [id] {...}
 
 Creates or updates an actuator configuration.  If an actuator with the provided id is currently configured, it is updated.  Otherwise, a new sensor configuration is created.
 
-#### actuator \<id> get [parameter]
+#### get actuator \<id>
 
 Get a actuator configuration, corresponding to the id.  When called with a parameter argument, returns just the parameter requested.  Otherwise returns the entire JSON blob.
 
 If id is not specified, returns a JSON array containing all actuator configurations.
 
-#### actuator rm \<id>
+#### rm actuator \<id>
 
 Remove the actuator configuration matching the corresponding id
 
-#### actuator ls
+#### ls actuator
 
 List all configured actuators in a tabluar format
+
+#### reset actuator <id> {property: \$property}
+
 
 <br/>
 ### Telemeter
 
 Summary: telemeter set, get, rm, ls
 
-#### telemeter [id] set {...}
+#### set telemeter [id] {...}
 
 Creates or updates an telemeter configuration.  If an actuator with the provided id is currently configured, it is updated.  Otherwise, a new sensor configuration is created.
 
-#### telemeter \<id> get [parameter]
+#### get telemeter \<id> [parameter]
 
 Get a actuator configuration, corresponding to the id.  When called with a parameter argument, returns just the parameter requested.  Otherwise returns the entire JSON blob.
 
 If id is not specified, returns a JSON array containing all telemeter configurations.
 
-#### telemeter rm \<id>
+#### rm telemeter \<id>
 
 Remove the telemeter configuration matching the corresponding id
 
-#### telemeter ls
+#### ls telemeter
 
 List all configured telemeters in a tabluar format
+
+#### reset telemeter <id> {property: \$property}
 
 
 <br/>
 ### Board
 The commands access features of the board itself and firmware metadata
 
+This consists of three types of commands
+
+* get/set commands in the standard that report hardware properties.
+* warranty/license shorthands for human operators on the serial connection
+* debugging shorthands for human developers on the serial connection
+
+This is a custom namespace at the top level.
+
 #### board version
+```
+get board { property: 'version'}
+```
+rrivctl: get board version
 
 #### board firmware warranty
+```
+get board { property: 'firmware-warranty'}
+get board { property: 'firmware'}
+```
+
 #### board firmware conditions
 #### board firmware license
 
 #### board rtc set \<epoch>
+```
+set board {'epoch': \$epoch} 
+```
 Set real time clock epoch time
 
 #### board rtc get
 Get the current real time clock epoch time stored on a RRIV device
+```
+get board { property: 'epoch'}
+```
 
 #### board restart
+```
+run board {'commmand' : 'restart'}
+```
 
 
 #### board i2c ls
@@ -222,6 +298,13 @@ Get the current real time clock epoch time stored on a RRIV device
 | 3v3Boost | enable/disable 3v3 boost converted|
 
 
+<br/>
+### Device
+Top level commands that dump and load all for the device in one payload
+
+#### get
+#### set
+#### reset \<STM_ID>
 
 
 
