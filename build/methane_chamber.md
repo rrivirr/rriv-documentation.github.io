@@ -4,7 +4,7 @@ description
 
 | Item          | Chamber Quantity | Buy Quantity  | Supplier part # / URL   |
 | ------------- | ---------------- | ------------- | ------------- |
-| 8 quart bucket                                             | 1          | 6         | [example name] (https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818) |
+| 8 quart bucket                                             | 1          | 6         | (https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818) |
 | 2.5 LPM, 4.5 V air pump | 1 | 6 |
 | PNP transistor | 1 | |
 | Diode | 1 | | 
@@ -14,19 +14,19 @@ description
 | Dessicant Packet                                           | 1          | 1000      | [McMaster-Carr 2189K34](https://www.mcmaster.com/2189K34/) |
 | Connectors | 1 | 6 | |
 | bulk heads | 1 | 6 | |
-| Polyethylene (HDPE) Sheet ( 3 inch width, 4 foot length, 1/8 inch thickness ) | X | X | https://www.mcmaster.com/8671K56/ |
+| Polyethylene (HDPE) Sheet ( 3 inch width, 4 foot length, 1/8 inch thickness ) |  |  | https://www.mcmaster.com/8671K56/ |
 | Jumbo pool noodles                                               | 2          | 12 | https://www.walmart.com/ip/Oodles-of-Noodles-Pool-Noodles-5-PACK-Random-Colors/746213215?fulfillmentIntent=Shipping&athbdg=L1600 |
 | 11" Zip ties                                            | 8.         | 100 | https://www.menards.com/main/electrical/electrical-tools-accessories/cable-ties/gardner-bender-reg-11-natural-cable-ties-100-pack/46-210/p-1444430994083-c-6443.htm?tid=-1577002442902513490&ipos=9 |  
 | Zinc plated machine screws (size 10, 32 x 1-1/2" )         | 48         | 70 (1 box)| https://www.menards.com/main/hardware/fasteners-connectors/screws/machine-screws/grip-fast-reg-10-32-x-1-1-2-combo-drive-zinc-round-head-machine-screw-70-count/77116520241/p-1444452011002-c-8933.htm?tid=523259707822814569&ipos=7 |
-| Silicone Sealant | | | |
+| Silicone Sealant | consumable | | |
 | Protoboard/strip board | | | |
 | Jst-PH 3pin plug | | | |
 | Dupont 1pin socket plug | | | |
 | Jst-XH 4pin socket | | | |
 | Jst-XH 4pin plug | | | |
-| Small Heat Shrink Tubing| | | |
-| Hot Glue | | | |
-
+| Small Heat Shrink Tubing| consumable | | |
+| Hot Glue | consumable | | |
+| Solder | consumable | | |
 
 ## Diagrams
 diagram of cutting & drilling for Polyethelene 
