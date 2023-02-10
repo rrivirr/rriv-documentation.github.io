@@ -4,7 +4,7 @@ description
 
 | Item          | Chamber Quantity | Buy Quantity  | Supplier part # / URL   |
 | ------------- | ---------------- | ------------- | ------------- |
-| 8 quart bucket                                             | 1          | 6         | (https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818) |
+| 8 quart bucket                                             | 1          | 6         | https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818 |
 | 2.5 LPM, 4.5 V air pump | 1 | 6 |
 | PNP transistor | 1 | |
 | Diode | 1 | | 
