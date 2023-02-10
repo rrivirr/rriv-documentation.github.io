@@ -18,12 +18,14 @@ description
 | Jumbo pool noodles                                               | 2          | 12 | https://www.walmart.com/ip/Oodles-of-Noodles-Pool-Noodles-5-PACK-Random-Colors/746213215?fulfillmentIntent=Shipping&athbdg=L1600 |
 | 11" Zip ties                                            | 8.         | 100 | https://www.menards.com/main/electrical/electrical-tools-accessories/cable-ties/gardner-bender-reg-11-natural-cable-ties-100-pack/46-210/p-1444430994083-c-6443.htm?tid=-1577002442902513490&ipos=9 |  
 | Zinc plated machine screws (size 10, 32 x 1-1/2" )         | 48         | 70 (1 box)| https://www.menards.com/main/hardware/fasteners-connectors/screws/machine-screws/grip-fast-reg-10-32-x-1-1-2-combo-drive-zinc-round-head-machine-screw-70-count/77116520241/p-1444452011002-c-8933.htm?tid=523259707822814569&ipos=7 |
-| Silicone Sealant | | |
-| Protoboard/strip board | | |
-| Jst-PH 3pin plug | | |
-| Dupont 1pin socket plug | | |
-| Jst-XH 4pin socket | | |
-| Jst-XH 4pin plug | | |
+| Silicone Sealant | | | |
+| Protoboard/strip board | | | |
+| Jst-PH 3pin plug | | | |
+| Dupont 1pin socket plug | | | |
+| Jst-XH 4pin socket | | | |
+| Jst-XH 4pin plug | | | |
+| Small Heat Shrink Tubing| | | |
+| Hot Glue | | | |
 
 
 ## Diagrams
