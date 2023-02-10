@@ -7,11 +7,11 @@ Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and
 | Item                                                       | Case Qty   | Buy Qty   |  Supplier Part # / CAD link |
 | ---------------------------------------------------------- | ---------- | --------- |  -------------------------- |
 | NGM2611-E13        | 1  | 1          | https://... |
-| DHT22*              | 1  | 1           | https://... |
+| AHT20             | 1  | 1           | https://... |
 | 1-1/4" PVC Sch 40         | 1 | 1 | |
 | 1-1/4" PVC Sch 40 End Cap | 1 | 1 | |
 | 1-1/4" PVC Sch 40 Hub x Hub Coupler | 1 | 1 | |
-| 8 conduit cable* | 7.5" |1m | digikey |
+| 9 conduit cable* | 7.5" |1m | digikey |
 | MiniPax Dessicant | 1 | | |
 | .005" PTFE film 6" Wide | Consumable | | |
 | 8" cable tie | 2 | | |
@@ -28,11 +28,11 @@ Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and
 | Jst-XH 4pin socket | 1 | | |
 | Jst-XH 4pin plug | 1 | | |
 
-*discontinued product, may need to switch to AHT20, an i2c sensor, if can't find stock.  This would also affect the cable +1
 
 ## Schematics
 
 Wiring diagrams.
+@kenchong48 - please include wiring diagram here.
 
 ### Communication protocol
 
