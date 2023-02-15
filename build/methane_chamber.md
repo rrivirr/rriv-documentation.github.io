@@ -32,13 +32,14 @@ description
 * 3/4" machine screws would be a better length, 1 1/2" used 
 
 ## Diagrams
+diagram air pump circuit
+
+
 diagram of cutting & drilling for Polyethelene 
+
 diagram of drilling bucket
+
 diagram of drilling enclosure box
-
--------------------
-
-diagram of wiring for air pump 
 
 
 -------------------
@@ -48,19 +49,14 @@ diagram of wiring for air pump
 build process for electronics
 build process for bucket/chamber
 
+
 ### Tools & Skills
-
-What's needed to build
-
-physical tools
-
-soldering 
+Drill, 5/32" drill bit, Scalpel / art knife, Wire stripper, Wire cutter, Dupont Crimping Pliers, Engineer PA-21 Crimping Pliers, Soldering iron, Mini glue gun, heat gun
 
 ### Parts Fabrication
 
-What to do with the bill of materials.
 
-order by part / material? or order by circuit vs bucket
+
 
 ### Assembly & Waterproofing
 
