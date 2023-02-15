@@ -7,7 +7,7 @@ description
 | 8 quart bucket | 1 | 6  | https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818 |
 | 2.5 LPM, 4.5 V air pump | 1 | 6 | https://www.adafruit.com/product/4699 |
 | NGM2611-E13 | 1 | | |
-| DHT22 * | | | |
+| DHT22 * | 1 | | |
 | PNP transistor | 1 | 10 (1 pack) | https://www.adafruit.com/product/756 |
 | Diode | 1 | 10 | https://www.adafruit.com/product/755 | 
 | 330 ohm Resistor ** | 1 | 20 (1 pack) | https://www.sparkfun.com/products/14490 |
