@@ -39,17 +39,11 @@ diagram of cutting & drilling for Polyethelene
 ![IMG_40C85594B607-1](https://user-images.githubusercontent.com/103074569/219152421-98b87355-d171-4ba4-b86e-77568957aac7.jpeg)
 
 diagram of drilling bucket
-
-diagram of drilling enclosure box
-
+![IMG_E75C9200ADB3-1](https://user-images.githubusercontent.com/103074569/219155273-d93df3ff-158f-412d-9075-35c896966eec.jpeg)
 
 -------------------
 
 ## Build Process
-
-build process for electronics
-build process for bucket/chamber
-
 
 ### Tools & Skills
 Drill, 5/32" drill bit, Scalpel / art knife, Wire stripper, Wire cutter, Dupont Crimping Pliers, Engineer PA-21 Crimping Pliers, Soldering iron, Mini glue gun, heat gun
