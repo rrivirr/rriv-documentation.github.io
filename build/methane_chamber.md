@@ -33,9 +33,10 @@ description
 
 ## Diagrams
 diagram air pump circuit
-
+![Screenshot 2023-02-15 at 3 29 16 PM](https://user-images.githubusercontent.com/103074569/219152341-593cb96a-a043-4425-9710-3bf024a7f128.jpg)
 
 diagram of cutting & drilling for Polyethelene 
+![IMG_40C85594B607-1](https://user-images.githubusercontent.com/103074569/219152421-98b87355-d171-4ba4-b86e-77568957aac7.jpeg)
 
 diagram of drilling bucket
 
