@@ -28,9 +28,9 @@ Gets current parameters of a resource, in a machine readable format.
 
 Removes a resource
 
-### ls
+~~### ls~~
 
-Lists all resources of a particular tyle, in a tabular human readable format.
+~~Lists all resources of a particular tyle, in a tabular human readable format.~~
 
 ### run
 
