@@ -1,7 +1,7 @@
 
 # RRIV Methane Beta Setup
 ## Overview
-Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<sub>2</sub>). Methane sensors use a Figaro XXX metal oxide sensor and CO<sub>2</sub> sensors use a Atlas Scientific infrared carbon dioxide sensor. Sensors were encased in segments of 2" PVC pipe with one end covered by a XXX" thick PTFE diaphragm to permit gas exchange with the water.
+Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<sub>2</sub>). Methane sensors use a Figaro NGM2611-E13 metal oxide sensor and CO<sub>2</sub> sensors use a Atlas Scientific infrared carbon dioxide sensor. Sensors were encased in segments of 2" PVC pipe with one end covered by a XXX" thick PTFE diaphragm to permit gas exchange with the water.
 
 ## Tools
 * 2 adjustable wrench 3/8” to 1 ¼”
