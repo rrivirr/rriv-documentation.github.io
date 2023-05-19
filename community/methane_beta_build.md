@@ -44,10 +44,10 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 	* While your computer is connected via USB to the RRIV logger is connected to a power source, select the `PlatformIO: Serial Monitor`. This will open a serial connection that will allow you to give commands to the RRIV logger.
 * To learn more abou the command line interface (CLI) and the commands available check RRIV documentation here or type `help` into the RRIV CLI command prompt and hit enter.
 * To configure the sensor paste the following commands in the CLI one at a time (press enter after each command):<br>
-&emsp;*Command for setting up sampling interval*: `set-config {"loggerName":"writeOnBoard","siteName":"7char","deploymentIdentifier":"15char","wakeInterval":60,"startUpDelay":0,"burstNumber":60,"interBurstDelay":1}`<br>
-*Command that configures the humidity sensor integrated with the methane sensor:* `set-slot-config {"slot":1,"type":"adafruit_dht22","tag":"dht","burst_size":10,"sensor_pin":5}`
-set-slot-config {"slot":2,"type":"atlas_co2","tag":"atlas","burst_size":10}
-set-slot-config {"slot":3,"type":"generic_analog","tag":"ch4","burst_size":10,"adc_select":"external","sensor_port":2}
+&emsp;*Command for setting up sampling interval*:<br> ```set-config {"loggerName":"writeOnBoard","siteName":"7char","deploymentIdentifier":"15char","wakeInterval":60,"startUpDelay":0,"burstNumber":60,"interBurstDelay":1}```<br>
+&emsp;*Command that configures the humidity sensor integrated with the methane sensor:*<br>```set-slot-config {"slot":1,"type":"adafruit_dht22","tag":"dht","burst_size":10,"sensor_pin":5}```<br>
+&emsp;*Command that configures the CO<sub>2</sub> sensor:*<br>```set-slot-config {"slot":2,"type":"atlas_co2","tag":"atlas","burst_size":10}```<br>
+&emsp;*Command that configures the CH<sub>4</sub> sensor:*<br>```set-slot-config {"slot":3,"type":"generic_analog","tag":"ch4","burst_size":10,"adc_select":"external","sensor_port":2}```
 
 * use following configuration commands: set-config<>
 * test sensor performance using the command start-logging
