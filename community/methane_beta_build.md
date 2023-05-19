@@ -50,7 +50,8 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 &emsp;*Command that configures the CO<sub>2</sub> sensor:*<br>```set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}```<br>
 &emsp;*Command that configures the CH<sub>4</sub> sensor:*<br>```set-slot-config {"slot":3, "type":"generic_analog", "tag":"ch4", "burst_size":10, "adc_select":"external", "sensor_port":2}```
 
-* To test the sensors type the command `start-logging` while the sensors are connected to the RRIV logger and press enter. This command will continuously report sensor values until you type `stop-logging`. Note: while the system is logging, values will continuously update  sensor performance using the command start-logging
+* To test the sensors type the command `start-logging` while the sensors are connected to the RRIV logger and press enter. This command will continuously report sensor values until you type `stop-logging`. Note: while the system is logging, values will continuously update sensor performance using the command start-logging. This means that when you are typing `stop-logging` the letters you type in will be broken up by new lines of data. The device will still read your typing as a single command so keep typing and press enter and the logger will stop.
+* To beginning using the logger type `deploy-now` and press enter. Any time the logger is powered up after this it will immediately enter deployment mode after 5 seconds and begin collecting data following the configurations set above.
 
 ![Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box](graphics/rrivLoggerConnect.png "Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box. The color of the dupont jumper cable that should be connected to each pin is indicated following the color scheme used in Figure 3")
 
@@ -62,11 +63,11 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 
 ![Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.](graphics/connectingMethaneSensor.jpg "Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.")
 
-* Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports. *
+*Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.*
 
 ## Sonde assembly
-![Figure 3: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 3: Assembly of the sensor housing")
-*Figure 3: Assembly of the sensor housing*
+![Figure 5: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 5: Assembly of the sensor housing")
+*Figure 5: Assembly of the sensor housing*
 
 * Place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side of the acrylic plate to holid it in place. There are a total of six bolts used for the housing.
 * With the back plate of the sonde on the ground and the bolts pointing upwards, place assembled ABS housing with o-rings on the bottom. Make sure to apply a light layer of Molykote grease to the o-ring.
