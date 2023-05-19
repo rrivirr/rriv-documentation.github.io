@@ -20,7 +20,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 
 ## Sensor assembly
 ![Figure 1: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 1: Assembly of the sensor housing")
-*Figure 1: Assembly of the sensor housing
+*Figure 1: Assembly of the sensor housing*
 
 * place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side acrylic plate to holid it in place. (would be good to have a picture of the different steps sooner or later!)
 
