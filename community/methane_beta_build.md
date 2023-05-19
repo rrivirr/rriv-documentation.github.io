@@ -6,9 +6,10 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 ## Tools
 * 2 adjustable wrench 3/8” to 1 ¼”
 * Pliers 3/8” to 1 ¼”
-* [Molykote Grease](https://www.dupont.com/molykote.html)
 * Mini USB to USB cable
-* [Programming header](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html)(Figure 1)
+* [Programming header](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) (Figure 1)
+* ABS Rubber Cement
+* [Molykote Grease](https://www.dupont.com/molykote.html)
 
 ![Figure 1: ST Nucleo programming header](graphics/programmingBoard.jpg "Figure 1: ST Nucleo programming header")
 
@@ -18,7 +19,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 * RRIV Data Logger (V0.21)
 * Enclosed CH<sub>4</sub> sensor
 * Enclosed CO<sub>2</sub> sensor
-* ABS sonde housing (add link to instructions on how to build one yourself)
+* ABS sonde housing
 
 ## Off the shelf components to purchase
 | Item | Number Needed per Device| Source & Part Number |
@@ -30,12 +31,21 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 | Tenergy rechargeable NiMH D cell batteries | 6 | [Tenergy D Cell Batteries](https://power.tenergy.com/8pcs-tenergy-centura-lite-nimh-d-1-2v-3000mah-rechargeable-batteries/) |
 | Tenergy NiMH D cell battery charger | 1 | [Tenergy Battery Charger](https://www.tenergy.com/01480) |
 | Dupont jumper cables | 8 | [Digikey 1528-1961-ND](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1950/6827084?utm_adgroup=Jumper%20Wire&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Prototyping%2C%20Fabrication%20Products_NEW&utm_term=&utm_content=Jumper%20Wire&gclid=Cj0KCQjwmZejBhC_ARIsAGhCqnfnwVrB9Qzxf5KKnGFd_KI0TyKxzOzWoKUWDibQ6rWHKfjT-iwHqIwaAmCSEALw_wcB) |
+| Copper Mesh Roll | 1 | [Home Depot](https://www.homedepot.com/p/Bird-B-Gone-Copper-Mesh-20-ft-Roll-for-Rodent-and-Bird-Control-CMS-20/205862497) |
 
 ## Sensor assembly
 ![Figure 2: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 2: Assembly of the sensor housing")
 *Figure 2: Assembly of the sensor housing*
 
-* place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side acrylic plate to holid it in place.
+* Place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side of the acrylic plate to holid it in place. There are a total of six bolts used for the housing.
+* With the back plate of the sonde on the ground and the bolts pointing upwards, place assembled ABS housing with o-rings on the bottom. Make sure to apply a light layer of Molykote grease to the o-ring.
+* Place the dowel with the battery pack inside the ABS housing.
+* Take the logger assembly that is fully connected to the sensors mounted in the middle acrylic plate. Fit the holes into the plate onto the six threaded rods and slide the middle plate with the electronics down the rods and gently place the electronics into the housing. Be sure to connect the logger to the battery pack and to place a dessicant pack in the housing.
+* On each bolt place a washer and nut and screw them down until they are begin tightening down on the middle acrylic plate. Use an adjustable wrench to turn each bolt approximately 1/2 turn past finger tight using a second adjustable wrench to prevent the nut next to the back plate to keep it from rotating. Make sure that the bolts are level and applying equal pressure on the acrylic plate.
+* Add a second set of washers and nuts to each bolt, this time placing the bolt first and facing upwards followed by the washer. The bolts should be placed approximately 5" above the middle acrylic plate.
+* Now slide the front plate down until it is resting on the washer and nut you have just placed on the threaded rod.
+* Add another washer and nut to each rod and tighten each on the front plate.
+* Wrap copper mesh around the cage formed around the sensors and affix with cable ties.
 
 
 ## Initial sensor setup and configuration
