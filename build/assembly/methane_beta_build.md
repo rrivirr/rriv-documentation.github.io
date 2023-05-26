@@ -67,12 +67,12 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 
 ## Commands for rapid configuration of a device
 ```
-{
+
   set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":60, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
   set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}
   set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}
   deploy-now
-}
+
 ```
 
 ## Once the sensor has been deployed
