@@ -51,7 +51,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 &emsp;*Command that configures the CH<sub>4</sub> sensor:*<br>```set-slot-config {"slot":3, "type":"generic_analog", "tag":"ch4", "burst_size":10, "adc_select":"external", "sensor_port":2}```
 
 * To test the sensors type the command `start-logging` while the sensors are connected to the RRIV logger and press enter. This command will continuously report sensor values until you type `stop-logging`. Note: while the system is logging, values will continuously update sensor performance using the command start-logging. This means that when you are typing `stop-logging` the letters you type in will be broken up by new lines of data. The device will still read your typing as a single command so keep typing and press enter and the logger will stop.
-* To beginning using the logger type `deploy-now` and press enter. Any time the logger is powered up after this it will immediately enter deployment mode after 5 seconds and begin collecting data following the configurations set above.
+* To beginning using the logger type `deploy-now` and press enter. Any time the logger is powered up after this it will immediately enter deployment mode after 5 seconds and begin collecting data following the configurations set above. Thus, you can keep the device powered down and add the batteries in the field immediately before deployment.
 
 ![Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box](graphics/rrivLoggerConnect.png "Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box. The color of the dupont jumper cable that should be connected to each pin is indicated following the color scheme used in Figure 3")
 
@@ -64,6 +64,23 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 ![Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.](graphics/connectingMethaneSensor.jpg "Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.")
 
 *Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.*
+
+## Commands for rapid configuration of a device
+```
+{
+  set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":60, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
+  set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}
+  set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}
+  deploy-now
+}
+```
+
+## Once the sensor has been deployed
+* When the sensor has been recovered, take the logger out of the case and connect the programming board to the device as described above (Figure 2).
+* Open up the serial monitor in VS Code.
+* Power up the device with batteries or a wall outlet.
+* Once the device is fully booted up and you have reached the command prompt, you have 5 seconds to press the letter 'i' and then press enter. This puts the device back into interactive mode.
+* At this point you can remove the SD card and copy the data off the device.
 
 ## Sonde assembly
 ![Figure 5: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 5: Assembly of the sensor housing")
