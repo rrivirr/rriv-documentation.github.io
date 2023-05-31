@@ -43,7 +43,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 * Now use the keys CTRL+SHIFT+P (macos: CMD+SHIFT+P) and type serial monitor.
 	* This will present you with an option for `PlatformIO: Serial Monitor`.
 	* While your computer is connected via USB to the RRIV logger is connected to a power source, select the `PlatformIO: Serial Monitor`. This will open a serial connection that will allow you to give commands to the RRIV logger.
-* To learn more abou the command line interface (CLI) and the commands available check RRIV documentation here or type `help` into the RRIV CLI command prompt and hit enter.
+* To learn more about the command line interface (CLI) and the commands available check RRIV documentation here or type `help` into the RRIV CLI command prompt and hit enter.
 * To configure the sensor paste the following commands in the CLI one at a time (press enter after each command):<br>
 &emsp;*Command for setting up sampling interval*:<br> ```set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":60, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}```<br>
 &emsp;*Command that configures the humidity sensor integrated with the methane sensor:*<br>```set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}```<br>
@@ -66,22 +66,54 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 *Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.*
 
 ## Commands for rapid configuration of a device
+* set-slot-config
+	* `loggerName` is a colloquial name that has been written on the back of the board in sharpie
+	* `siteName` is a 7 character string to indicate where the RRIV is being deployed, this will also be used in the folder structure of CSV output, so should be unique
+	* `deploymentIdentifier` is a 15 character string to indicate what experiment is being run
+	* `wakeInterval` is in minutes and determines when the board wakes up to begin measurement cycles. 60 indicates to wake up every hour, 1 indicates every minute. The next interval is calculated at the end of a measurement cycle
+	* `startUpDelay` is a duration in minutes to delay before starting the measurement cycle
+	* `burstNumber` indicates how many burst cycles to complete during a measurement cycle
+	* `interBurstDelay` now also works as an interval given in minutes for when to begin taking readings. 1 indicates to take readings at every minute
+* example of set-config that will need to be customized
+```
+set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":1, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
 ```
 
-  set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":60, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
+* set-slot-config:
+	* `slot` is a digital slot of data set aside in the EEPROM to hold a sensor configuration
+	* `type` is what driver type occupies the slot, these can be found by looking in the registry.cpp and following the "\_TYPE\_STRING" definitions
+	* `tag` is a 5 character prefix for column headers, these should be left alone unless there are multiple of the same sensor in a system
+	* `burst_size` is the number of reading cycles that should occur per burst
+	* `sensor_pin` indicates which specific GPIO pin is being used for the sensor
+	* `adc_select` can be either 'internal' or 'external' and indicates whether the analog sensor data is being processed by the ADC in the MCU or the external one
+	* `sensor_port` indicates which physical port the sensor is occupying
+* These can and should be used as they are to setup the AHT, CO2, and CH4 sensors:
+```
   set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}
-  set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}
-  set-slot-config {"slot":3, "type":"generic_analog", "tag":"ch4", "burst_size":10, "adc_select":"external", "sensor_port":2}
-  deploy-now
-
 ```
+```
+  set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}
+```
+```
+  set-slot-config {"slot":3, "type":"generic_analog", "tag":"ch4", "burst_size":10, "adc_select":"external", "sensor_port":2}
+```
+* To check that all sensors are working properly use `start-logging` and when satisfied `stop-logging`
+* If the DHT is showing errors restart the board using `restart` then try again
+* If the serial is showing many I2C errors, disconnect the CO2 sensor and restart, if it is no longer showing I2C errors then manually switch the CO2 sensor from UART to I2C mode, if it is still showing I2C errors then unplug power and USB, hold reset button for a few seconds, then try again, or keep hitting the reset button until the errors clear
+* To put the system in deployment mode use `deploy-now`, it will then go to sleep until the next wake interval
 
 ## Once the sensor has been deployed
-* When the sensor has been recovered, take the logger out of the case and connect the programming board to the device as described above (Figure 2).
-* Open up the serial monitor in VS Code.
-* Power up the device with batteries or a wall outlet.
-* Once the device is fully booted up and you have reached the command prompt, you have 5 seconds to press the letter 'i' and then press enter. This puts the device back into interactive mode.
-* At this point you can remove the SD card and copy the data off the device.
+* When the system has been recovered, if the system has been fully drained of power then disconnect the power source, if the system is still powered, hit the physical reset button (Black push button) before disconnecting power
+* At this point you can remove the SD card and copy the data from it, then move folders into the oldData folder(we've been preserving old data on the SD cards for now), the file structure is `Data/{siteName}/epochTimestampAtFileCreation.CSV`
+* Take the logger out of the case and connect the programming board to the device as described above (Figure 2)
+* Open up the serial monitor in VS Code
+* Power up the device with batteries or a wall outlet
+* Once the device is fully booted up and you have reached the command prompt, you have 5 seconds to press the letter 'i' and then press enter. This puts the device back into interactive mode for further use
+
+## Data
+* The DHT22 reports temperature in degrees Celsius and relative humidity in percentage
+* CO2 data is reported in ppm
+* Methane data is reported as a digital reading, which can be converted to volts by `reading*5/4096` or millivolts `reading*5000/4096`, 5V being the voltage to the ADC and sensor, and 4096 being 2^12, which is the precision of the ADC
 
 ## Sonde assembly
 ![Figure 5: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 5: Assembly of the sensor housing")
