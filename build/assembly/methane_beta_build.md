@@ -67,7 +67,8 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 *Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.*
 
 ## Commands for rapid configuration of a device
-* set-slot-config
+* `get-config` is used to check the configuration of the settings as they are, the first section displayed is the datalogger settings followed by sensor slot settings
+* `set-config`
 	* `loggerName` is a colloquial name that has been written on the back of the board in sharpie
 	* `siteName` is a 7 character string to indicate where the RRIV is being deployed, this will also be used in the folder structure of CSV output, so should be unique
 	* `deploymentIdentifier` is a 15 character string to indicate what experiment is being run
@@ -80,15 +81,15 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":1, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
 ```
 
-* set-slot-config:
+* `set-slot-config`:
 	* `slot` is a digital slot of data set aside in the EEPROM to hold a sensor configuration
 	* `type` is what driver type occupies the slot, these can be found by looking in the registry.cpp and following the "\_TYPE\_STRING" definitions
 	* `tag` is a 5 character prefix for column headers, these should be left alone unless there are multiple of the same sensor in a system
 	* `burst_size` is the number of reading cycles that should occur per burst
-	* `sensor_pin` indicates which specific GPIO pin is being used for the sensor
-	* `adc_select` can be either 'internal' or 'external' and indicates whether the analog sensor data is being processed by the ADC in the MCU or the external one
-	* `sensor_port` indicates which physical port the sensor is occupying
-* These can and should be used as they are to setup the AHT, CO2, and CH4 sensors:
+	* `sensor_pin` only for DHT22 currently, indicates which specific GPIO pin is being used for the sensor
+	* `adc_select` only for analog sensors, can be either 'internal' or 'external' and indicates whether the analog sensor data is being processed by the ADC in the MCU or the external one
+	* `sensor_port` only for analog sensors, indicates which physical port the sensor is occupying
+* These can and should be used as they are to setup the AHT, CO2, and CH4 sensors, though once configured should be retained:
 ```
   set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}
 ```
@@ -120,6 +121,7 @@ set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifi
 ![Figure 5: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 5: Assembly of the sensor housing")
 *Figure 5: Assembly of the sensor housing*
 
+* Use the ABS cement to secure the central housing ABS section into both the open sides of the couplers. Follow directions on the ABS cement to do so. Leave to cure in a ventilated space for 2hours
 * Place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side of the acrylic plate to holid it in place. There are a total of six bolts used for the housing.
 * With the back plate of the sonde on the ground and the bolts pointing upwards, place assembled ABS housing with o-rings on the bottom. Make sure to apply a light layer of Molykote grease to the o-ring.
 * Place the dowel with the battery pack inside the ABS housing.
