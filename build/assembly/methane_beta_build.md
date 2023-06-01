@@ -118,19 +118,60 @@ set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifi
 * Methane data is reported as a digital reading, which can be converted to volts by `reading*5/4096` or millivolts `reading*5000/4096`, 5V being the voltage to the ADC and sensor, and 4096 being 2^12, which is the precision of the ADC
 
 ## Sonde assembly
-![Figure 5: Assembly of the sensor housing](graphics/caseAssembly.png "Figure 5: Assembly of the sensor housing")
-*Figure 5: Assembly of the sensor housing*
+![Figure 5: Assembly of the extended sensor housing](graphics/extendedCaseAssembly.png "Figure 5: Assembly of the extended sensor housing")
+*Figure 5: Assembly of the extended sensor housing*
 
-* Use the ABS cement to secure the central housing ABS section into both the open sides of the couplers. Follow directions on the ABS cement to do so. Leave to cure in a ventilated space for 2hours
-* Place bolts through the solid acrylic plate that forms the back of the sonde and fix washers and nuts on the short side of the acrylic plate to holid it in place. There are a total of six bolts used for the housing.
-* With the back plate of the sonde on the ground and the bolts pointing upwards, place assembled ABS housing with o-rings on the bottom. Make sure to apply a light layer of Molykote grease to the o-ring.
-* Place the dowel with the battery pack inside the ABS housing.
-* Take the logger assembly that is fully connected to the sensors mounted in the middle acrylic plate. Fit the holes into the plate onto the six threaded rods and slide the middle plate with the electronics down the rods and gently place the electronics into the housing. Be sure to connect the logger to the battery pack and to place a dessicant pack in the housing.
-* On each bolt place a washer and nut and screw them down until they are begin tightening down on the middle acrylic plate. Use an adjustable wrench to turn each bolt approximately 1/2 turn past finger tight using a second adjustable wrench to prevent the nut next to the back plate to keep it from rotating. Make sure that the bolts are level and applying equal pressure on the acrylic plate.
-* Add a second set of washers and nuts to each bolt, this time placing the bolt first and facing upwards followed by the washer. The bolts should be placed approximately 5" above the middle acrylic plate.
-* Now slide the front plate down until it is resting on the washer and nut you have just placed on the threaded rod.
-* Add another washer and nut to each rod and tighten each on the front plate.
-* Wrap copper mesh around the cage formed around the sensors and affix with cable ties.
+* Part assembly: use the ABS cement to secure the central housing ABS section into both the open sides of the couplers. Follow directions on the ABS cement to do so. Leave to cure in a ventilated space for 2hours
+
+### Case Assembly:
+1. Add 2 nuts onto each of the 6 steel threaded rods, around 1" and 8" from the same end, then add washers to them one from each end of the rod.
+![steel threaded rod assembly](graphics/rodAssembly.jpg "steel threaded rod assembly")
+2. Add the 6 rods through an acrylic end plate (does not have the holes for the cable glands / sensors) and affix each rod with another washer and nut.
+![base plate assembly](graphics/basePlateAssembly.jpg "base plate assembly")
+3. Apply Molykote to the O-ring of the cable gland and attach with sensors through the sensor plate, hand tighten or use pliers. If the O-ring is displaced the it is too tight.
+![sensors in sensor plate](graphics/sensorsInSensorPlate.jpg "sensors in sensor plate")
+4. Rest the sensor plate on the open set of washers and visually level the nuts as best as possible, the goal is to keep the plate flat.
+![sensor plate assembly](graphics/sensorsInPlate.jpg "sensor plate assembly")
+5. If deploying follow next steps, if doing a submersion test, proceed directly to sealing.
+
+### Deploying:
+1. Add RRIV board to battery assembly using Velcro.
+![board velcroed to battery assembly](graphics/boardVelcroedToBatteryAssembly.jpg "board velcroed to battery assembly")
+2. Place board + battery assembly into center of rods, taking care to ensure no wires go around the rods. Then orient so that the dowel rod can sit flat on the acrylic plate and connect the sensors.
+![Front](graphics/RRIVinCaseUncovered_front.jpg "Front")
+![Back](graphics/RRIVinCaseUncovered_back.jpg "Back")
+3. Set RRIV board to deployment mode by connecting to serial, checking sensors are working using `start-logging` (`stop-logging` when done checking), then using the command `deploy-now`.
+4. Slide housing around the assembly, check for wires trapped underneath, mainly the blue wire of the CO2 sensor, then add dessicant pack in from the top.
+![Add dessicant](graphics/RRIVcaseAddDessicant.jpg "add dessicant")
+5. Wrap copper mesh around the sensor cage and affix with cable ties.
+6. Proceed to sealing
+
+### Sealing:
+1. Add top plate and hand tighten washers and nuts onto each rod.
+![seal top](graphics/RRIVcaseTopSealed.jpg "seal top")
+2. Make one round of tightening the nuts in pairs across from each other using one or two sets of pliers, making ~180 degree turns and hand tightening the other nuts after each pair. 
+3. Hand tighten the nuts on the sensor plate up towards the top plate, then repeat step 4.
+4. Check each top nut by trying to make a 90 degree turn on each, they should all feel similarly tight.
+5. Visually check the seal formed on the O-ring against the acrylic plate, you should not see the O-ring deform or have anything trapped underneath it, restart if you do.
+
+![Figure 6: RRIV in extended sensor housing](graphics/RRIVinSensorCase.jpg "Figure 6: RRIV in extended sensor housing")
+*Figure 6: RRIV in extended sensor housing*
+
+### Submersion tests (conducted without RRIV electronics in case):
+* 30 minutes and 1 hour are good checking points for initial leaks. 24 hours for next day.
+* In the event of a severe leak during testing, check sensor cases have not also flooded which can happen if the water traverses through the wires/cables of the sensor. If they have flooded, the PTFE should be cut to allow the case to drain, then dried; sensor cases can be remade if the sensors are still functioning. Otherwise, allow sensor cables to dry fully before using them.
+
+![Stock tank submersion](graphics/submersionTestStockTank.jpg "Submerge horizontally in a stock tank and weigh down the main housing to test the entire case")
+*Submerge horizontally in a stock tank and weigh down the main housing to test the entire case*
+
+![5gal bucket submersion test](graphics/submersionTest5galBucket.jpg "Submerge vertically in a 5gallon bucket to test just the sensor plate")
+*Submerge vertically in a 5gallon bucket to test just the sensor plate and cable glands*
+
+<!-- ![x](graphics/x.jpg "x") -->
+
+
+
+
 
 
 
