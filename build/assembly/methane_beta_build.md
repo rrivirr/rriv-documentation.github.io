@@ -121,7 +121,9 @@ set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifi
 ![Figure 5: Assembly of the extended sensor housing](graphics/extendedCaseAssembly.png "Figure 5: Assembly of the extended sensor housing")
 *Figure 5: Assembly of the extended sensor housing*
 
-* Part assembly: use the ABS cement to secure the central housing ABS section into both the open sides of the couplers. Follow directions on the ABS cement to do so. Leave to cure in a ventilated space for 2hours
+* Part assembly: 
+	* Use the ABS cement to secure the central housing ABS section into both the open sides of the couplers. Follow directions on the ABS cement to do so. Leave to cure in a ventilated space for 2hours
+	* Apply a coat of Molykote 111 around the large O-rings and add them around the short sections of ABS in the couplers
 
 ### Case Assembly:
 1. Add 2 nuts onto each of the 6 steel threaded rods, around 1" and 8" from the same end, then add washers to them one from each end of the rod.
