@@ -1,7 +1,7 @@
 
 # RRIV Methane Beta Setup
 ## Overview
-Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<sub>2</sub>). Methane sensors use a Figaro NGM2611-E13 metal oxide sensor and CO<sub>2</sub> sensors use a Atlas Scientific infrared carbon dioxide sensor. Sensors were encased in segments of 2" PVC pipe with one end covered by a 0.005" thick PTFE diaphragm to permit gas exchange with the water.
+Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<sub>2</sub>). Methane sensors use a Figaro NGM2611-E13 metal oxide sensor and CO<sub>2</sub> sensors use a Atlas Scientific infrared carbon dioxide sensor. Sensors were encased in segments of 1-1/4" PVC pipe with one end covered by a 0.005" thick PTFE diaphragm to permit gas exchange with the water.
 
 ## Tools
 * 2 adjustable wrench 3/8” to 1 ¼”
@@ -36,10 +36,12 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 
 ## Initial sensor setup and configuration
 * Install [Microsoft VS Code](https://code.visualstudio.com/) and then from within *VS Code* install the [PlatformIO extension](https://platformio.org/).
-* Go to https://github.com/rrivirr/rriv and clone the repository there with github or download manually to a folder on your computer.
-* Use dupont jumper cables to connect the programming board to the RRIV logger for communication following Figures 2 and 3.
-* Connect the methane sensor plugs to the board as pictured in Figure 4. Plug the remaining 4-pin plug into the port on the back of the board.
-* Plug the usb cable into the programming board and the computer your are using.
+<!-- * Go to https://github.com/rrivirr/rriv and clone the repository there with github or download manually to a folder on your computer. -->
+* Go to https://github.com/kenchong48/rriv/tree/continuousPower and clone the repository there with github or download manually to a folder on your computer.
+	*  If you clone the repository, you may have to navigate to the continuousPower branch, check with `git branch`, switch branches with `git checkout continuousPouwer`
+* Use dupont jumper cables to connect the programming board to the RRIV logger for communication following Figures 2 and 3- programming header CN4 pins 2, 3, 4, TX, RX to the three RRIV pins 4, 3, 2 on the bottom of the board, then RX and TX on the Nucleo CN10 pins 35 and 37.
+* Connect the methane sensor plugs to the board as pictured in Figure 4 - red+white into ADC4, purple+green into ADC2, black+blue+orange into ADC1. Plug the remaining 4-pin plug of the CO2 sensor into one of the ports on the back of the board.
+* Plug the usb cable into the programming board and the computer you are using.
 * Open VS Code and select the PlatformIO icon on the left side of the VS Code window. On the platformio home screen select `open project` and navigate to *folder* containing the RRIV repository you downloaded and select `open folder`.
 * Now use the keys CTRL+SHIFT+P (macos: CMD+SHIFT+P) and type serial monitor.
 	* This will present you with an option for `PlatformIO: Serial Monitor`.
@@ -54,9 +56,9 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 * To test the sensors type the command `start-logging` while the sensors are connected to the RRIV logger and press enter. This command will continuously report sensor values until you type `stop-logging`. Note: while the system is logging, values will continuously update sensor performance using the command start-logging. This means that when you are typing `stop-logging` the letters you type in will be broken up by new lines of data. The device will still read your typing as a single command so keep typing and press enter and the logger will stop.
 * To beginning using the logger type `deploy-now` and press enter. Any time the logger is powered up after this it will immediately enter deployment mode after 5 seconds and begin collecting data following the configurations set above. Thus, you can keep the device powered down and add the batteries in the field immediately before deployment.
 
-![Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box](graphics/rrivLoggerConnect.png "Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box. The color of the dupont jumper cable that should be connected to each pin is indicated following the color scheme used in Figure 3")
+![Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box](graphics/rrivLoggerConnect.png "Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box. The color of the dupont jumper cable that should be connected to each pin is indicated following the color scheme used in Figure 3.")
 
-*Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box*
+*Figure 2: RRIV Logger with the pins that are used to connect the programming board indicated by the orange box. TODO: fix annotation, order for pins is opposite, Green-Blue-Purple*
 
 ![Figure 3: a) The programming board connected to a RRIV logger using a set of five dupont jumper cables. b) a close-up of the programming board with the color of the jumper cable to be connected at each pin indicated.](graphics/programmingJumpers.png "Figure 3: a) The programming board connected to a RRIV logger using a set of five dupont jumper cables. b) a close-up of the programming board with the color of the jumper cable to be connected at each pin indicated.")
 
@@ -66,8 +68,11 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 
 *Figure 4: Methane and humidity sensors plugged into the analog to digital converter (ADC) ports.*
 
-## Commands for rapid configuration of a device
+## Commands and notes for rapid configuration of a device
 * `get-config` is used to check the configuration of the settings as they are, the first section displayed is the datalogger settings followed by sensor slot settings
+	* There is one hardcoded setting to take note of which is `continuous_power`, whether it is true/false is shown when using `get-config`.
+	* To switch this setting one must go to the line `settings->continuous_power = true;` in the datalogger.cpp file and change `true` to `false`, then recompile and flash the code.
+	* The instance where this should be left as `true` is when calibrating the methane sensors which benefits from taking continuous measurements and suffers from the sensor module cooling down.
 * `set-config`
 	* `loggerName` is a colloquial name that has been written on the back of the board in sharpie
 	* `siteName` is a 7 character string to indicate where the RRIV is being deployed, this will also be used in the folder structure of CSV output, so should be unique
