@@ -10,7 +10,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 
 | Item                                                       | Case Qty   | Buy Qty   |  Supplier Part # / CAD link |
 | ---------------------------------------------------------- | ---------- | --------- |  -------------------------- |
-| 3" ABS Schedule 40 Pipe                                    | 11"        | 10'       | [Menards 6881155 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/10-abs-sch-40-plain-end-cellular-core-dwv-pipe/abs033000600hc/p-1444426392509-c-8562.htm) |
+| 3" ABS Schedule 40 Pipe                                    | 12"        | 10'       | [Menards 6881155 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/10-abs-sch-40-plain-end-cellular-core-dwv-pipe/abs033000600hc/p-1444426392509-c-8562.htm) |
 | 3" ABS Hub x Hub Coupler                                   | 2          | 1         | [Menards 6881537 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/nibco-reg-hub-abs-dwv-coupling/i00975h/p-1444449159767-c-8562.htm) |
 | -341 EPDM 70A O-ring                                       | 2          | 15        | [McMaster-Carr 9557K316](https://www.mcmaster.com/9557K316/) |
 | 18-8 Stainless Steel Threaded Rod 3/8" -16                 | 6          | 2'        | [McMaster-Carr 98920A031](https://www.mcmaster.com/98920A031/) |
@@ -53,9 +53,10 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 
 ### Parts Fabrication
 
-- Cut two 1-21/32" length sections of ABS and 1x 8" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly. 
-  - these lengths may vary depending on brand of coupler, length to cut the ABS sections the O-rings will go around are based on compressing the O-ring 30%
-  - 8" length size may vary depending on brand of coupler, final length desired is 12" to fit the nylon bar, this distance can be calculated by 
+- Cut two 1-21/32" length sections of ABS and 1x 8-1/4" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly. 
+  - these lengths may vary depending on brand of coupler, length to cut the ABS sections the O-rings will go around are based on compressing the O-ring around 25% of it's width of 0.21" = 0.1575"  or ~5/32"
+  - for the NIBCO brand coupler we found a depth of 1 1/2", so 1 1/2" + 5/32" = 1 21/32"
+  - we also found the center barrier in the coupler is measured at around 1/4", 1 21/32" + 1/4 = 1 29/32", 12" - 2x 1 29/32" = ~8 1/4"
 - Mark placement of battery holder screw placements on Nylon bar
 - Drill 3/32" pilot holes into nylon bar (for #6 screws) according to battery holder placement centered on bar, then screw battery holder into nylon bar
 - Cut 20" of copper mesh x2
@@ -65,7 +66,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 
 1. Add cable glands to sensor plate
 2. Insert ABS 1-21/32" length into one end of each coupling
-3. Use ABS cement to glue the 8" ABS into each coupling, and leave to cure for 2 hrs
+3. Use ABS cement to glue the 8-1/4" ABS into each coupling, and leave to cure for 2 hrs
 3. Add O-Rings around ABS
 4. Add nuts & washers to rods
 5. Add plates & housing to rods
