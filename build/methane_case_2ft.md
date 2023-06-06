@@ -29,6 +29,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 | 1/4" Clear Acrylic Sensor Plate*                           | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
 | 1/4" Clear Acrylic Cage Plate*                             | 1          | NA        | [CAD Drawing 3inch](https://github.com/rrivirr/sonde/tree/master/panels) |
 | ABS Cement                                                 | Consumable | NA        | [Menards  6932185](https://www.menards.com/main/plumbing/plumbing-installation-repair/pipe-cements-cleaners-primers/oatey-reg-medium-black-abs-cement-4-oz/309995/p-1444449932067-c-8530.htm?tid=-7621218153408053791&ipos=1) |
+| 2D cell battery holder with center mounting points | 3 | 1 | [MPJA 36651 BH](https://www.mpja.com/Battery-Holder-2-D-Cell-Series/productinfo/36651%20BH/) |
 
 *[Flare Tech Laser & Design](https://flaretechlaser.com/)
 
@@ -52,7 +53,9 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 
 ### Parts Fabrication
 
-- Cut two 1-21/32" length sections of ABS and 1x 8" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly
+- Cut two 1-21/32" length sections of ABS and 1x 8" length for the hub inserts and main housing section. When making hub inserts, 20/32 to 22/32 is acceptable, too little won't hold the o-ring in place, too much won't compress the o-ring enough to seal properly. 
+  - these lengths may vary depending on brand of coupler, length to cut the ABS sections the O-rings will go around are based on compressing the O-ring 30%
+  - 8" length size may vary depending on brand of coupler, final length desired is 12" to fit the nylon bar, this distance can be calculated by 
 - Mark placement of battery holder screw placements on Nylon bar
 - Drill 3/32" pilot holes into nylon bar (for #6 screws) according to battery holder placement centered on bar, then screw battery holder into nylon bar
 - Cut 20" of copper mesh x2
