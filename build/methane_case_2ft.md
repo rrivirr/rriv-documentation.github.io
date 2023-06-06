@@ -20,8 +20,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 | Dow Corning 111 Molykote                                   | Consumable | 5.3 Fl oz | [McMaster-Carr 1204K32](https://www.mcmaster.com/1204K32/) |
 | Dessicant Packet                                           | 1          | 1000      | [McMaster-Carr 2189K34](https://www.mcmaster.com/2189K34/) |
 | 11" Cable Ties                                             | 4          | 100       | [McMaster-Carr 7130K55](https://www.mcmaster.com/7130K55/) |
-| Dome Cap Cable Gland 1/2" NPT .19-.35" w/ O-Ring & Locknut | 1          | 1         | [elecDirect RDC13NR](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-1-2-npt-19-35-black-complete-with-o-ring-locknut) |
-| Dome Cap Cable Gland .11-.26" w/ O-Ring & Locknut          | 1          | 1         | [elecDirect RDC07AA](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-pg7-11-26-black-complete-with-o-ring-locknut) |
+| Dome Cap Cable Gland 1/2" NPT .19-.35" w/ O-Ring & Locknut | 2          | 1         | [elecDirect RDC13NR](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-1-2-npt-19-35-black-complete-with-o-ring-locknut) |
 | 3/4" wide Velcro                                           | 1"         | 5'        | [McMaster-Carr 9273K13-9273K133](https://www.mcmaster.com/9273K13-9273K133/) |
 | 18-8 Stainless Steel Phillips Flat Head #6 x 1/2" Screws   | 6          | 100       | [McMaster-Carr 90065A148](https://www.mcmaster.com/90065A148/) |
 | 3/4" x 3/4" Nylon Bar                                      | 1'         | 1'        | [McMaster-Carr 8732K17](https://www.mcmaster.com/8732K17/) |
