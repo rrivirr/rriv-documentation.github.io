@@ -20,15 +20,15 @@ Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and
 | Tall round cylinder container | | | |
 | Epoxy | Consumable | | |
 | Epoxy Putty | Consumable | | |
-| Protoboard/stripboard | Consumable | | |
+| Protoboard/stripboard* | Consumable | | |
 | Mini glue gun stick | Consumable | | |
 | RDC13NR Cord Grip | 1 | | |
 | Jst-PH 3pin plug | 3 | | |
 | Dupont 1pin socket plug | 1 | | |
-| Jst-XH 4pin socket | 1 | | |
-| Jst-XH 4pin plug | 1 | | |
+| Jst-XH 4pin socket* | 1 | | |
+| Jst-XH 4pin plug* | 1 | | |
 
-*discontinued product, may need to switch to AHT20, an i2c sensor, if can't find stock.  This would also affect the cable +1
+*discontinued product, switch to AHT20, and modify methane sensor to need 1 less pin, protoboard and XH were also for DHT22
 
 ## Schematics
 
