@@ -13,7 +13,7 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 | 3" ABS Schedule 40 Pipe                                    | 12"        | 10'       | [Menards 6881155 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/10-abs-sch-40-plain-end-cellular-core-dwv-pipe/abs033000600hc/p-1444426392509-c-8562.htm) |
 | 3" ABS Hub x Hub Coupler                                   | 2          | 1         | [Menards 6881537 ](https://www.menards.com/main/plumbing/pipe-fittings/abs-pipe-fittings/nibco-reg-hub-abs-dwv-coupling/i00975h/p-1444449159767-c-8562.htm) |
 | -341 EPDM 70A O-ring                                       | 2          | 15        | [McMaster-Carr 9557K316](https://www.mcmaster.com/9557K316/) |
-| 18-8 Stainless Steel Threaded Rod 3/8" -16                 | 6          | 2'        | [McMaster-Carr 98920A031](https://www.mcmaster.com/98920A031/) |
+| 18-8 Stainless Steel Threaded Rod 3/8" -16                 | 6          | 2'        | [McMaster-Carr 98804A031](https://www.mcmaster.com/98804A031/) |
 | 18-8 Stainless Steel Hex Nuts 3/8" -16                     | 24         | 100       | [McMaster-Carr 91845A031](https://www.mcmaster.com/91845A031/) |
 | 18-8 Stainless Steel Washers 3/8"                          | 24         | 100       | [McMaster-Carr 92141A031](https://www.mcmaster.com/92141A031/) |
 | 5" Copper Mesh/Gauze                                       | 20"        | 100'      | [McMaster-Carr 6361T16 ](https://www.mcmaster.com/6361T16/) |
