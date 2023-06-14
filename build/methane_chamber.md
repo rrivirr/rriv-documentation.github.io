@@ -7,12 +7,12 @@ description
 | 8 quart bucket | 1 | 6  | https://www.usplastic.com/catalog/item.aspx?itemid=23173&catid=818 |
 | 2.5 LPM, 4.5 V air pump | 1 | 6 | https://www.adafruit.com/product/4699 |
 | NGM2611-E13 | 1 | | |
-| DHT22 * | 1 | | |
+| AHT20 * | 1 | | https://learn.adafruit.com/adafruit-aht20 |
 | PNP transistor | 1 | 10 (1 pack) | https://www.adafruit.com/product/756 |
 | Diode | 1 | 10 | https://www.adafruit.com/product/755 | 
 | 330 ohm Resistor ** | 1 | 20 (1 pack) | https://www.sparkfun.com/products/14490 |
 | NiMH D cell bateries | 4 | 16 | http://power.tenergy.com/tenergy-d-10-000mah-nimh-rechargeable-battery-16pcs/ |
-| battery holders | 4 |  | |
+| battery holders | 4 |  | https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/BH2DL/56225 |
 | Protoboard / stripboard | consumable | | |
 | Jst-PH 3pin plug | 4 | | |
 | Jst-PH 2pin plug | 1 | | |
