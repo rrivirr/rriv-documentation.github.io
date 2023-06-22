@@ -30,7 +30,7 @@ These locations may have pin headers or JST XH size sockets installed, but eithe
 1. Connect SWCLK, GND, SWDIO, RX, and TX from the programming board ot the RRIV datalogger using Dupont female-female connectors
 2. Ensure that both jumpers at CN2 on the programmer board are removed
 2. Plug the USB port of the programming board into the computer using a USB cable.
-3. Power the RRIV board, using a battery or a second USB cable into the RRIV datalogger's USB port
+3. Power the RRIV board, using a second USB cable into the RRIV datalogger's USB port. (v0.4.1 boards may also be powered by battery)
 4. You may now program the RRIV datalogger and monitor serial using platformio.
 
 ## Notes
