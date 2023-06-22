@@ -6,6 +6,6 @@
 ## Resources
 
 * [Datasheets](datasheets/)
-* [Programming Firmware](board/programming-interface)
+* [STLink Interface](board/programming-interface)
 
 
