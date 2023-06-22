@@ -25,7 +25,7 @@ These locations may have pin headers or JST XH size sockets installed, but eithe
 <img src="debug-pinout.png" alt="Programming Board" width="500"/>
 
 
-## Connecting the RRIV datalogger to a computer for firmware programming
+## Connecting the RRIV datalogger for programming
 
 1. Connect SWCLK, GND, SWDIO, RX, and TX from the programming board ot the RRIV datalogger using Dupont female-female connectors
 2. Ensure that both jumpers at CN2 on the programmer board are removed
