@@ -5,6 +5,7 @@
 Command structure:
 * `<command> [arguments]`
 
+## Commands
 ### `<help>`
 List all commands
 
