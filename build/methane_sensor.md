@@ -1,13 +1,13 @@
-# Sensor Title
+# Waterproof Methane Sensor
 
-Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and Adafruit DHT22.
+Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and Adafruit AHT20.
 
 ## Bill of Materials
 
 | Item                                                       | Case Qty   | Buy Qty   |  Supplier Part # / CAD link |
 | ---------------------------------------------------------- | ---------- | --------- |  -------------------------- |
-| NGM2611-E13        | 1  | 1          | https://... |
-| DHT22*              | 1  | 1           | https://... |
+| NGM2611-E13        | 1  | 1          | https://www.figarosensor.com/product/entry/ngm2611.html source w/ 2 month lead |
+| AHT20              | 1  | 1           | https://www.adafruit.com/product/4566 |
 | 1-1/4" PVC Sch 40         | 1 | 1 | |
 | 1-1/4" PVC Sch 40 End Cap | 1 | 1 | |
 | 1-1/4" PVC Sch 40 Hub x Hub Coupler | 1 | 1 | |
@@ -28,7 +28,6 @@ Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and
 | Jst-XH 4pin socket* | 1 | | |
 | Jst-XH 4pin plug* | 1 | | |
 
-*discontinued product, switch to AHT20, and modify methane sensor to need 1 less pin, protoboard and XH were also for DHT22
 
 ## Schematics
 
@@ -46,30 +45,31 @@ Mechanical drawings.
 
 ### Tools & Skills
 
-Drill
-1/4" drill bit
-Ridgid Quick-acting tubing cutter (model 151)
-Deburring tool (find the right sized one for 1-1/4" pvc)
-Scalpel / art knife
-Wire stripper
-Wire cutter
-Dupont Crimping Pliers
-Engineer PA-21 Crimping Pliers
-Soldering iron
-Mini glue gun
-Gloves
-Fume hood / well ventilated area
-Tension rod (for fume hood)
-Shower rings & clips
+* Drill
+* 1/4" drill bit
+* Rigid Quick-acting tubing cutter (model 151)
+* Deburring tool (find the right sized one for 1-1/4" pvc)
+* Scalpel / art knife
+* Wire stripper
+* Wire cutter
+* Dupont Crimping Pliers
+* Engineer PA-21 Crimping Pliers
+* Soldering iron
+* Mini glue gun
+* Gloves
+* Fume hood / well ventilated area
+* Tension rod (for fume hood)
+* Shower rings & clips
 
 ### Parts Fabrication
 
+1. Drill 1/4" hole in center of cap
+1. Cut PVC to 2.25" and deburr both ends, until they are smooth to touch (only have to do one end if you keep track of it as the end that contacts the PTFE)
+1. Drill two offset rings of 8x 1/4" holes in the bottom half of PVC coupler (can do 4 holes if you drill all the way across)
+1. Solder DHT22 to proto board (4x4) w/ JST-XH 4pin socket, 10k ohm resistor
+1. Cut cable to 8.5", strip 1" off one end, then 2mm off each wire attach crimps and slide into JST-XH 4pin plug and Dupont 5pin socket
 1. Cut PTFE film to 3" x 3" square
-2. Drill 1/4" hole in center of cap
-3. Cut PVC to 2.25" and deburr both ends, until they are smooth to touch (only have to do one end if you keep track of it as the end that contacts the PTFE)
-4. Drill two offset rings of 8x 1/4" holes in the bottom half of PVC coupler (can do 4 holes if you drill all the way across)
-5. Solder DHT22 to proto board (4x4) w/ JST-XH 4pin socket, 10k ohm resistor
-6. Cut cable to 8.5", strip 1" off one end, then 2mm off each wire attach crimps and slide into JST-XH 4pin plug and Dupont 5pin socket
+
 
 ### Assembly & Waterproofing
 
