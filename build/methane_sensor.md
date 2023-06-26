@@ -11,7 +11,7 @@ Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and
 | 1-1/4" PVC Sch 40         | 1 | 1 | |
 | 1-1/4" PVC Sch 40 End Cap | 1 | 1 | |
 | 1-1/4" PVC Sch 40 Hub x Hub Coupler | 1 | 1 | |
-| 8 conduit cable* | 7.5" |1m | digikey |
+| 8 conductor cable* | 7.5" |1m | digikey |
 | MiniPax Dessicant | 1 | | |
 | .005" PTFE film 6" Wide | Consumable | | |
 | 8" cable tie | 2 | | |
