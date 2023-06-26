@@ -1,4 +1,4 @@
-# GHG System  Case
+# GHG System Case
 
 Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScientific EZO-CO2 sensor, and 6 D cell batteries.  Which informs the sensor plate, cable glands, and power supply (length of case and nylon bar).
 [TODO: If we removed / generalized the sensor plate and cable glands requirements / instructions this could generally be for a 12" elongated case]: #
@@ -34,11 +34,14 @@ Case specifically for use with the Figaro NGM2611-E13, Adafruit DHT22, AtlasScie
 
 ## Diagrams
 
-![Fig. 1 : Annotated Case Diagram](case/case-assembly.png)
+![](case/case-assembly.png)
+Fig. 1 : Annotated Case Diagram
 
-![Fig. 2 : Sensor Panel](case/SensorPanel.png)
+![](case/SensorPanel.png)
+Fig. 2 : Sensor Panel
 
-![Fig. 3 : Back and Cage Panels](case/BackPanel.png)
+![s](case/BackPanel.png)
+Fig. 3 : Back and Cage Panel
 
 ## Build Process
 
