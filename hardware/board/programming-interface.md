@@ -34,6 +34,6 @@ These locations may have pin headers or JST XH size sockets installed, but eithe
 4. You may now program the RRIV datalogger and monitor serial using platformio.
 
 ## Notes
-* The USB port on the RRIV datalogger currently in ONLY for supplying power to the board on the bench.  The RRIV datalogger cannot currently be programmed or interacted with thorugh this port.
+* The USB port on the RRIV datalogger currently in ONLY for supplying power to the board on the bench.  The RRIV datalogger cannot currently be programmed or interacted with through this port.
 * In some cases the MCU on the RRIV datalogger may need to be reset in order to program it.  The recommended path for this is to power cycle the board.
- 
+  
