@@ -5,12 +5,12 @@
 
 ## Atlas Scientific CO2 Sensor
 ### Sensor Details
-technology: optical
-range: 0-10000ppm +/-50ppm
+technology: optical<br/>
+range: 0-10000ppm +/-50ppm<br/>
 
 ### RRIV Integration Details
-driver: atlas_co2
-case: developed
+driver: atlas_co2<br/>
+case: developed<br/>
 
 ### Product Links
 * [Product page]()
@@ -20,12 +20,12 @@ case: developed
 
 ## MH-Z16
 ### Sensor Details
-technology: NDIR
-range: 0-100000ppm 
+technology: NDIR<br/>
+range: 0-100000ppm<br/> 
 
 ### RRIV Integration Details
-driver: under development
-case: under development
+driver: under development<br/>
+case: under development<br/>
 
 ### Product Links
 * [Product page](https://sandboxelectronics.com/?product=100000ppm-mh-z16-ndir-co2-sensor-with-i2cuart-5v3-3v-interface-for-arduinoraspeberry-pi)
@@ -34,12 +34,12 @@ case: under development
 
 ## Adafruit SCD41 	
 ### Sensor Details
-technology: photoacoustic
-range: 400-5000ppm  +/-50ppm
+technology: photoacoustic<br/>
+range: 400-5000ppm  +/-50ppm<br/>
 
 ### RRIV Integration Details
-driver: not developed
-case: not developed
+driver: not developed<br/>
+case: not developed<br/>
 
 ### Product Links
 * [Product page](https://www.adafruit.com/product/5190)
@@ -47,12 +47,12 @@ case: not developed
 
 ## Adafruit SCD30
 ### Sensor Details
-technology: NDIR
-range: 400-10,000ppm +/-30ppm
+technology: NDIR<br/>
+range: 400-10,000ppm +/-30ppm<br/>
 
 ### RRIV Integration Details
-driver: not developed
-case: not developed
+driver: not developed<br/>
+case: not developed<br/>
 
 ### Product Links
 * [Product page](https://www.adafruit.com/product/4867)
