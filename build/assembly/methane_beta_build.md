@@ -9,7 +9,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 * Mini USB to USB cable
 * [Programming header](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) (Figure 1)
 * ABS Rubber Cement
-* [Molykote Grease](https://www.dupont.com/molykote.html)
+* [Molykote Grease 111](https://www.dupont.com/molykote.html)
 
 ![Figure 1: ST Nucleo programming header](graphics/programmingBoard.jpg "Figure 1: ST Nucleo programming header")
 
