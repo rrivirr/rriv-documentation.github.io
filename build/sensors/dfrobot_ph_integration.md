@@ -3,13 +3,13 @@
 ## Parts needed
 * [DFRobot pH Sensor](https://www.dfrobot.com/product-1782.html)
 * M20 IP67 Cable Gland (Supplier: [Elecdirect Dome Cap Cable Gland](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-m20-19-35-black-complete-with-o-ring-locknut))
-* Lithium Moly Grease (e.g., [Lucasoil Lithium Grease](https://www.amazon.com/Lucas-Oil-10533-Lithium-Grease/dp/B004X70LZA/ref=asc_df_B004X70LZA/?tag=hyprod-20&linkCode=df0&hvadid=312151168520&hvpos=&hvnetw=g&hvrand=12751387308192042965&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011858&hvtargid=pla-364752123727&th=1)
-* 22 AWG hook0up wire (e.g., [Adafruit 22AWG Spool Set](https://www.adafruit.com/product/3175?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfzUefNXaZgFmL8MpqskC52_lq_Huy3KYFDuIzKR2XJ_EnG1sNZSfuQaAtqzEALw_wcB)
+* Lithium Moly Grease (e.g., [Lucasoil Lithium Grease](https://www.amazon.com/Lucas-Oil-10533-Lithium-Grease/dp/B004X70LZA/ref=asc_df_B004X70LZA/?tag=hyprod-20&linkCode=df0&hvadid=312151168520&hvpos=&hvnetw=g&hvrand=12751387308192042965&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011858&hvtargid=pla-364752123727&th=1))
+* 22 AWG hook0up wire (e.g., [Adafruit 22AWG Spool Set](https://www.adafruit.com/product/3175?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfzUefNXaZgFmL8MpqskC52_lq_Huy3KYFDuIzKR2XJ_EnG1sNZSfuQaAtqzEALw_wcB))
 * [Female 3-pin JST-PH plugs with crimp pins](https://www.amazon.com/CQRobot-Connector-Terminal-Industrial-Integrated/dp/B0731MZCGF)
 
 ## Hardware Integration
 ### Connectivity
-* A cable must be built or modified to provide connectivity between the RRIV board and the Gravity analog pH meter. A female 3-pin JST-PH plug should be used for the end connecting to the pH meter. If using a RRIV v0.3 board, a female 3-pin JST-PH plug should be used for the end connecting to the RRIV board. For a RRIV v0.4 board, a female 3-pin _JST-SH_ plug should be used.
+* A cable must be built or modified to provide connectivity between the RRIV board and the Gravity analog pH meter. A female 3-pin JST-PH plug should be used for the end connecting to the pH meter. If using a RRIV v0.3 board, a female 3-pin JST-PH plug should be used for the end connecting to the RRIV board. For a RRIV v0.4 board, a female 3-pin _JST-XH_ plug should be used.
 * Note: the sequence of pins on the RRIV and pH meter boards differ (see Figure 1). Construction of the cable should should follow the details in Figure 2
 
 ![Figure 1: Connecting Gravity analog sensors to the analog to digital converter (ADC) ports. A) RRIV V0.4 board with ADC interfaces indicated; B) Close-up of RRIV ADC interfaces indicating connection configuration; C) Glose up of Gravity pH meter interface. Note the sequence of pins for this connector differs from the sequence on the RRIV board](graphics/ADC_RRIV_Connect.jpg "Figure 1: Connecting Gravity analog sensors to the analog to digital converter (ADC) ports.")
