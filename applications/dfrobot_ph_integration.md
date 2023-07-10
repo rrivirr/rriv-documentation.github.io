@@ -3,8 +3,8 @@
 ## Parts needed
 * [DFRobot pH Sensor](https://www.dfrobot.com/product-1782.html)
 * M20 IP67 Cable Gland (Supplier: [Elecdirect Dome Cap Cable Gland](https://www.elecdirect.com/cord-grips-strain-relief/cable-glands/dome-cap-cable-gland-m20-19-35-black-complete-with-o-ring-locknut))
-* Lithium Moly Grease (e.g., [Lucasoil Lithium Grease](https://www.amazon.com/Lucas-Oil-10533-Lithium-Grease/dp/B004X70LZA/ref=asc_df_B004X70LZA/?tag=hyprod-20&linkCode=df0&hvadid=312151168520&hvpos=&hvnetw=g&hvrand=12751387308192042965&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011858&hvtargid=pla-364752123727&th=1)
-* 
+* Lithium Moly Grease (e.g., [Lucasoil Lithium Grease](https://www.amazon.com/Lucas-Oil-10533-Lithium-Grease/dp/B004X70LZA/ref=asc_df_B004X70LZA/?tag=hyprod-20&linkCode=df0&hvadid=312151168520&hvpos=&hvnetw=g&hvrand=12751387308192042965&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011858&hvtargid=pla-364752123727&th=1).
+* 22 AWG Hook-Up Wire ([hook-up wire spool set](https://www.adafruit.com/product/3175?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfzUefNXaZgFmL8MpqskC52_lq_Huy3KYFDuIzKR2XJ_EnG1sNZSfuQaAtqzEALw_wcB)).
 
 ## Hardware Integration
 * A cable must be built or modified to provide connectivity between the RRIV board and the Gravity analog pH meter. A female 3-pin JST-PH plug should be used for the end connecting to the pH meter. If using a RRIV v0.3 board, a female 3-pin JST-PH plug should be used for the end connecting to the RRIV board. For a RRIV v0.4 board, a female 3-pin _JST-SH_ plug should be used.
