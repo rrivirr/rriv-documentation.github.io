@@ -1,25 +1,25 @@
 # Quality Control Checklist
 
 ## Checklist
-[pass] Powers up over USB
-[pass] Programmable
-[pass] Serial
-[pass] RGB LED
-[mod] Switchable power cycling
-[pass] 2.4V boost converter
-[pass] 3.3V boost converter
-[pass] 5V boost converter
-[pass] VIN measure
-[pass] intADC
-[pass] exADC
-[ ] I2C 3.3V
-[pass] I2C 5V
-[pass] exADC MOSFET
-[pass] Battery level MOSFET 
-[pass] intADC MOSFET
-[ ] Wake switch
-[mod] Voltage ORing VDD
-[pass] Voltage ORing 3.3V
+* [pass] Powers up over USB
+* [pass] Programmable
+* [pass] Serial
+* [pass] RGB LED
+* [mod] Switchable power cycling
+* [pass] 2.4V boost converter
+* [pass] 3.3V boost converter
+* [pass] 5V boost converter
+* [pass] VIN measure
+* [pass] intADC
+* [pass] exADC
+* [ ] I2C 3.3V
+* [pass] I2C 5V
+* [pass] exADC MOSFET
+* [pass] Battery level MOSFET 
+* [pass] intADC MOSFET
+* [ ] Wake switch
+* [mod] Voltage ORing VDD
+* [pass] Voltage ORing 3.3V
 
 ## Noted Defects
 * Orientation of reset button still wrong
