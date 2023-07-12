@@ -1,5 +1,5 @@
 # Waterproof CO2 Sensor
-Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and Adafruit DHT22.
+Sensor and waterproof case specifically for use with the Atlas EZO-CO2 sensor
 
 ## Bill of Materials
 
