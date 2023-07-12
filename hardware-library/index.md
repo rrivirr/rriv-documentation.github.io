@@ -15,8 +15,8 @@ Submissions to this hardware library are encouraged, and can be submitted as pul
 * [pH](pH/)
 * [Humidity](humidity/)
 * [Color RGB](rgb/)
-* [CO2](co2/)
-* [Methane](co2/)
+* [CO2](CO2/)
+* [Methane](CO/)
 
 
 
