@@ -1,5 +1,4 @@
-# Sensor Title
-
+# Waterproof CO2 Sensor
 Sensor and waterproof case specifically for use with the Figaro NGM2611-E13, and Adafruit DHT22.
 
 ## Bill of Materials
