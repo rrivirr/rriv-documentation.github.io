@@ -83,7 +83,7 @@ Beta version RRIV loggers with methane (CH<sub>4</sub>) and carbon dioxide (CO<s
 	* `interBurstDelay` now also works as an interval given in minutes for when to begin taking readings. 1 indicates to take readings at every minute
 * example of set-config that will need to be customized
 ```
-set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifier":"15char", "wakeInterval":1, "startUpDelay":0, "burstNumber":60, "interBurstDelay":1}
+set-config {"loggerName":"writeOnBoard","siteName":"7char","deploymentIdentifier":"15char","wakeInterval":1,"startUpDelay":0,"burstNumber":60,"interBurstDelay":1}
 ```
 
 * `set-slot-config`:
@@ -96,13 +96,13 @@ set-config {"loggerName":"writeOnBoard", "siteName":"7char", "deploymentIdentifi
 	* `sensor_port` only for analog sensors, indicates which physical port the sensor is occupying
 * These can and should be used as they are to setup the AHT, CO2, and CH4 sensors, though once configured should be retained:
 ```
-  set-slot-config {"slot":1, "type":"adafruit_dht22", "tag":"dht", "burst_size":10, "sensor_pin":5}
+  set-slot-config {"slot":1,"type":"adafruit_dht22","tag":"dht","burst_size":10,"sensor_pin":5}
 ```
 ```
-  set-slot-config {"slot":2, "type":"atlas_co2", "tag":"atlas", "burst_size":10}
+  set-slot-config {"slot":2,"type":"atlas_co2","tag":"atlas","burst_size":10}
 ```
 ```
-  set-slot-config {"slot":3, "type":"generic_analog", "tag":"ch4", "burst_size":10, "adc_select":"external", "sensor_port":2}
+  set-slot-config {"slot":3,"type":"generic_analog","tag":"ch4","burst_size":10,"adc_select":"external","sensor_port":2}
 ```
 * To check that all sensors are working properly use `start-logging` and when satisfied `stop-logging`
 * If the DHT is showing errors restart the board using `restart` then try again
