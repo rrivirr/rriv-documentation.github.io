@@ -5,7 +5,7 @@
 * https://www.analog.com/media/en/technical-documentation/data-sheets/4316fa.pdf
 
 BOM
-* https://www.digikey.com/en/products/detail/texas-instruments/TPS7A1018PDSER/10820285
+* https://www.ti.com/lit/ds/symlink/tps7a20.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1702470498525
 
 
 # Other Temperature Sensors
