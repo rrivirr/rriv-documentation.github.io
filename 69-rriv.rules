@@ -1,0 +1,19 @@
+# Copy this file to /etc/udev/rules.d/
+# If rules fail to reload automatically, you can refresh udev rules
+# with the command "udevadm control --reload"
+
+#
+# This file is available under the GNU General Public License v2.0
+
+ACTION!="add|change", GOTO="rriv_rules_end"
+
+SUBSYSTEM=="gpio", MODE="0660", GROUP="plugdev", TAG+="uaccess"
+
+SUBSYSTEM!="usb|tty|hidraw", GOTO="rriv_rules_end"
+
+# Please keep this list sorted by VID:PID
+
+# RRIV Board
+ATTRS{idVendor}=="0483", ATTRS{idProduct}=="0029", MODE="660", GROUP="plugdev", TAG+="uaccess"
+
+LABEL="rriv_rules_end"

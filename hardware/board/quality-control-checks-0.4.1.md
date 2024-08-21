@@ -29,6 +29,9 @@
   * Root cause: both ideal diodes are turning off at threshold
   * Mitigation: replace R21 with 357K
   * Fix: use mitigation or use ST pin on ideal diode for synchronized switching
+* i2c hangs
+  * this appears to be due to going low when 3v3 is switch off.
+  * Fix: pullups should be agains VDD, not 3V3 
 
 ## Other Notes
 * When VIN measure is disable, the ADC still reads a nonzero value
