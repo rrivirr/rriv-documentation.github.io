@@ -36,8 +36,8 @@ will be different.
       4. You can now test this installation by typing `rrivctl` on the command line, you should see the help message.
 3. Update your computer to allow USB communication with the rriv board
    1.  The following two files must be copied into the /etc/udev/rules.d/ folder on your computer
-      1.  (https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-probe-rs.rules)
-      2.  (https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-rriv.rules)
+      1.  [](https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-probe-rs.rules)
+      2.  [](https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-rriv.rules)
    3. Download each file using the 'raw' link on github provided by the links above
    4. Copy them into place using a command like `sudo cp ${filename} /etc/udev/rules.d/`
    5. After both files are copied into place, reload the udev rules by running `sudo udevadm control --reload`
