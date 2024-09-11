@@ -35,7 +35,14 @@ will be different.
       3. source ./create-alias.sh # makes the command rrivctl available on the command line
       4. You can now test this installation by typing `rrivctl` on the command line, you should see the help message.
 3. Update your computer to allow USB communication with the rriv board
-4. Connect to the board and load configuration, or log data
+   1.  The following two files must be copied into the /etc/udev/rules.d/ folder on your computer
+      1.  https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-probe-rs.rules
+      2.  https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-rriv.rules
+   2. Download each file using the 'raw' link on github provided by the links above
+   3. Copy them into place using a command like `sudo cp ${filename} /etc/udev/rules.d/`
+   4. After both files are copied into place, reload the udev rules by running `sudo udevadm control --reload`
+5. Now we can try connecting to the board
+   1. Run the command `rrivctl connect`
 
 
 ## Developer Setup
