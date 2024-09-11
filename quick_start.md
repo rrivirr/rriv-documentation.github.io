@@ -42,7 +42,30 @@ will be different.
    3. Copy them into place using a command like `sudo cp ${filename} /etc/udev/rules.d/`
    4. After both files are copied into place, reload the udev rules by running `sudo udevadm control --reload`
 5. Now we can try connecting to the board
-   1. Run the command `rrivctl connect`
+   1. Plug the RRIV board into the computer using the USB port.   
+   2. Run the command `rrivctl connect`
 
 
 ## Developer Setup
+
+To get set up to write new code for the rriv firmware and/or to install compiled firmware onto the RRIV board, it is necessary to set up the development environment.
+
+
+1. Clone the rriv-rust repository
+2. Install rust toolchain following the instructions in the readme here: https://github.com/rrivirr/rriv-rust
+   1. Follow the instructions here to install rustup: https://rustup.rs/
+   2. rustup toolchain install nightly
+   3. rustup target add thumbv7m-none-eabi
+   4. cargo install probe-rs --features cli
+3. Install VSCode
+4. Install required VSCode extensions
+   1. rust-analyzer
+   2. probe-rs-debugger
+6. Install udev rules
+   1.  The following two files must be copied into the /etc/udev/rules.d/ folder on your computer
+      1.  https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-probe-rs.rules
+      2.  https://github.com/rrivirr/rriv-documentation/blob/main/hardware/udev/69-rriv.rules
+   2. Download each file using the 'raw' link on github provided by the links above
+   3. Copy them into place using a command like `sudo cp ${filename} /etc/udev/rules.d/`
+7. Connect the jtag board between the computer and the RRIV board.
+8. Test build and install by pressing the play button in VSCode
