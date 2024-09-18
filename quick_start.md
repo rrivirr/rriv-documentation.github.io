@@ -56,7 +56,8 @@ To get set up to write new code for the rriv firmware and/or to install compiled
    1. Follow the instructions here to install rustup: https://rustup.rs/
    2. rustup toolchain install nightly
    3. rustup target add thumbv7m-none-eabi
-   4. cargo install probe-rs --features cli
+   4. rustup default nightly
+   5. cargo install probe-rs --features cli
 3. Install VSCode
 4. Install required VSCode extensions
    1. rust-analyzer
