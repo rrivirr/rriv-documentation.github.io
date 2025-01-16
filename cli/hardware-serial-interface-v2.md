@@ -172,14 +172,27 @@ List all configured sensors in a tabluar format
 
 #### calibrate sensor \<id> {action: \$action, ...}
 ##### action: point
-&nbsp; Sets a calibration point 
+&nbsp; Sets a calibration point
 
-&nbsp;```calibrate sensor <id> {action: point, high: \$value}```
+&nbsp;```calibrate sensor <id> point {point: \$point_value, tag: $tag}```
+
+
+##### action: list, ls
+&nbsp; Lists all the calibration points currently registered
+
+&nbsp;```calibrate sensor <id> list```
+
+
+##### action: remove, rm
+&nbsp; Removes a registered calilbration point
+
+&nbsp;```calibrate sensor <id> remove {tag: $tag}```
+
 
 ##### action: fit
-&nbsp; Calculates fit based on calibration points
+&nbsp; Calculates fit based on calibration points that have been registered, and stores the fit.
 
-&nbsp;```calibrate sensor <id> {action: fit, type: 'linear'}```
+&nbsp;```calibrate sensor <id> fit { type: 'linear'}```
 
 
 #### reset sensor <id> {property: \$property}
