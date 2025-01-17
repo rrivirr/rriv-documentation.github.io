@@ -2,7 +2,7 @@
 
 ## Overview
 
-On version 0.4.0 and later of the RRIV datalogger, the ST-Link programming pins and serial interface pin are exposed in J5 and J6.  
+On version 0.4.1 and later of the RRIV datalogger, the ST-Link programming pins and serial interface pin are exposed in J5 and J6.  
 
 These locations may have pin headers or JST XH size sockets installed, but either will accept Dupont connectors from the corresponding pins on the programming board.  This is the preferred way to interface with and program the MCU.
 
