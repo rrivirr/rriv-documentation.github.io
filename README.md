@@ -45,5 +45,5 @@ RRIV is an open system for logging environmental data.
 
 #### Cloud & Security
 
-* Cloud
-* Security
+* [Cloud](software/cloud.md)
+* [Security](software/security.md)
