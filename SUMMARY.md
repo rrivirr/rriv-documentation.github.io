@@ -36,6 +36,7 @@
     * [pH Sensors](hardware-library/pH/index.md)
   * [temperature](hardware-library/temperature/README.md)
     * [Temperature Sensors](hardware-library/temperature/index.md)
+  * [CH4](hardware-library/ch4.md)
 * [hardware](hardware/README.md)
   * [Hardware Documentation](hardware/index.md)
   * [board](hardware/board/README.md)
