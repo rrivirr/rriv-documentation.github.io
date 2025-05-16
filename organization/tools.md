@@ -2,7 +2,7 @@
 
 ## Project Tools
 
-There are two classes of users
+There are two (or more) classes of users
 
 * directors?
 * member
@@ -24,4 +24,9 @@ Our IDP shall be keycloack running in our own cluster
 
 ### Documentation and Notes
 
+Documentation is authored as markdown and published on Github Pages.  Documentation can be edited via GitBook or directly in the repository [https://github.com/rrivirr/rriv-documentation](https://github.com/rrivirr/rriv-documentation)
+
+
+
+\
 We shall use Joplin for sharing notes between developers
