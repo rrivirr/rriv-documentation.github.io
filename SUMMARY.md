@@ -67,4 +67,5 @@
     * [Community Roadmap](community/community.md)
     * [Community](community/index.md)
     * [Organization Chart](community/organization_chart.md)
-  * [tools](organization/tools.md)
+  * [tools](organization/tools/README.md)
+    * [Joplin Notes](organization/tools/joplin-notes.md)
